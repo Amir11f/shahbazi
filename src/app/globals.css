@@ -1,14 +1,11 @@
 @import "tailwindcss";
-@font-face {
-  font-family: 'IRANSansFaNum';
-  src: url('/fonts/IRANSansWeb(FaNum).woff2') format('woff2');
-}
+@config '../../tailwind.config.js';
 
 :root {
   text-align: right ; 
 }
 
+
 body{
   font-family: 'IRANSansFaNum', sans-serif;
-
 }

@@ -1,15 +1,17 @@
-// tailwind.config.js
+/** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./app/**/*.{js,ts,jsx,tsx}"],
+  content: [
+    './src/app/**/*.{js,ts,jsx,tsx}',
+  ],
   theme: {
     extend: {
       colors: {
-        golden: "#C9A35B",
+        golden: "#C9A35B", // your custom color
       },
       fontFamily: {
-        cfont: ['var(--font-cfont)', ...fontFamily.sans],
+        cursive: 'var(--font-cursive)'
       },
     },
   },
   plugins: [],
-};
+}
