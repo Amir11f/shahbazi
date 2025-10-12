@@ -9,3 +9,37 @@
 body{
   font-family: 'IRANSansFaNum', sans-serif;
 }
+
+/* globals.css */
+::-webkit-scrollbar {
+  height: 1px;
+}
+
+.circle-checkbox {
+  appearance: none; /* remove default */
+  -webkit-appearance: none;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 1px solid ;
+  cursor: pointer;
+  position: relative;
+  display: inline-block;
+  transition: background 0.2s ease;
+}
+
+.circle-checkbox:checked {
+  background-color: rgb(255, 255, 255);
+}
+
+.circle-checkbox:checked::after {
+  content: "";
+  position: absolute;
+  left: 6px;
+  top: 2px;
+  width: 6px;
+  height: 10px;
+  border: solid rgb(0, 0, 0);
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
