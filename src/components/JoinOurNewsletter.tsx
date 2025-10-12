@@ -26,6 +26,7 @@ export default function JoinOurNewsletter() {
       </div>
       <Image
         src="/images/SecurityCameraHigh.jpg"
+        alt="null"
         width={228}
         height={170}
         className="w-[228px] h-[170px] sm:w-[328px] sm:h-[244px] xl:w-[700px] xl:h-[372px] "
