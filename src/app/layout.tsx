@@ -19,6 +19,11 @@ const cursive = localFont({
       style: "light",
       weight: "300",
     },
+    {
+      path: "./fonts/IRANSansUltraLight.ttf",
+      style: "ultraLight",
+      weight: "100",
+    },
   ],
   variable: "--font-cursive",
   display: "swap",
