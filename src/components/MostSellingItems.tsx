@@ -17,6 +17,7 @@ export default function MostSellingItems() {
           <div className="flex flex-col" key={item.id}>
             <Image
               src="/images/securityCamera.jpg"
+              alt="null"
               width={333}
               height={250}
               className="w-[333px] h-[250px] sm:w-[299px] sm:h-[313px] border-[#DFDFDF] border-1 rounded-lg xl:mb-3"
