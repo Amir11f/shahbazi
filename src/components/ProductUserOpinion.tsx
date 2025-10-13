@@ -1,6 +1,6 @@
 import React from "react";
 import { userComments } from "@/data/userComments";
-import type { UserComment } from "@/data/userComments";
+import type { UserComments } from "@/data/userComments";
 export default function ProductUserOpinion() {
   return (
     <div className=" flex flex-col items-center font-cursive text-[#030303]">
@@ -8,7 +8,7 @@ export default function ProductUserOpinion() {
         نظرات کاربران درباره پست
       </p>
       <div className="flex flex-col item-center] gap-9 sm:gap-4">
-        {userComments?.map((item: UserComment) => (
+        {userComments?.map((item: UserComments) => (
           <div
             key={item.id}
             className="w-[345px] flex flex-col h-auto gap-6 border-[1px] border-[#DCDCDC] rounded-[16px] items-center sm:w-[630px] sm:text-[#8D8D8D] xl:w-[1116px]"

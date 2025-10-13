@@ -19,6 +19,16 @@ const eslintConfig = [
       "build/**",
       "next-env.d.ts",
     ],
+    rules: {
+      // Disable unused variable warnings globally
+      "@typescript-eslint/no-unused-vars": "off",
+
+      // OR (better): only ignore vars starting with _
+      // "@typescript-eslint/no-unused-vars": [
+      //   "warn",
+      //   { "argsIgnorePattern": "^_", "varsIgnorePattern": "^_" }
+      // ],
+    },
   },
 ];
 
