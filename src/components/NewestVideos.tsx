@@ -14,6 +14,7 @@ export default function NewestVideos() {
       <div className="flex flex-col-reverse items-center gap-2.5 sm:flex-col xl:flex-row-reverse">
         <Image
           src="/images/NewestVideosBig.jpg"
+          alt="null"
           width={108}
           height={36}
           className="w-[360px] h-[160px] rounded-lg sm:w-[647px] sm:h-[286px] sm:rounded-2xl xl:w-[559px]"
@@ -21,12 +22,14 @@ export default function NewestVideos() {
         <div className="flex flex-row gap-2.5 sm:gap-4.5">
           <Image
             src="/images/NewestVideo.jpg"
+            alt="null"
             width={173}
             height={159}
             className="w-[173px] h-[159px]rounded-lg sm:w-[311px] sm:h-[286px] sm:rounded-2xl"
           ></Image>
           <Image
             src="/images/NewestVideo.png"
+            alt="null"
             width={173}
             height={159}
             className="w-[173px] h-[159px]rounded-lg sm:w-[311px] sm:h-[286px] sm:rounded-2xl"
