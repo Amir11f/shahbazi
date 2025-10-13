@@ -12,7 +12,7 @@ export default function Navbar() {
               <button className=" hidden xl:bg-[#C9A35B] xl:w-[141px] xl:h-12 xl:flex xl:flex-row xl:justify-center xl:items-center xl:rounded-xl ">
                 <p className=" hidden xl:text-lg xl:text-white">عضویت</p>
               </button>
-              <button className=" hidden xl:flex xl:w-12 xl:h-12 xl:bg-[#C9A35B] xl:rounded-xl"></button>
+              <button className=" hidden xl:flex xl:w-12 xl:h-12 xl:bg-[#C9A35B] xl:rounded-xl items-center"></button>
             </div>
           </div>
           <div className="hidden xl:flex xl:flex-row text-black xl:gap-4">
