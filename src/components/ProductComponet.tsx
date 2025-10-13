@@ -10,13 +10,15 @@ export default function ProductComponet({ slug }: { slug: number }) {
     <div className="flex flex-col items-center w-full font-cursive xl:items-center ">
       <div className="flex flex-col items-center xl:flex-row-reverse xl:gap-14">
         <div className="flex w-full flex-col items-center self-center justify-center xl:w-[527px] xl:h-[663px]">
-          <Image
-            src={findData?.image[0]}
-            alt="null"
-            width={335}
-            height={335}
-            className="sm:h-[527px] sm:w-[527px]"
-          />
+          {findData?.image && (
+            <Image
+              src={findData?.image[0]}
+              alt="null"
+              width={335}
+              height={335}
+              className="sm:h-[527px] sm:w-[527px]"
+            />
+          )}
           <div className="flex flex-row gap-2 w-full items-start justify-center mt-3 sm:gap-4 sm:mt-10">
             {findData?.color?.map((item: any) => (
               <div

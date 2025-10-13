@@ -20,8 +20,8 @@ export default function ProductForm() {
         <textarea
           name=""
           id=""
-          cols="30"
-          rows="10"
+          cols={30}
+          rows={10}
           className="h-[228px] bg-[#EFEFEF] rounded-lg w-full sm:mt-4"
         ></textarea>
         <button className="w-full h-11 bg-[#C9A35B] flex items-center justify-center text-lg text-white rounded-lg mt-5 sm:text-xl sm:w-[381px] self-start sm:h-[57px] sm:mt-10">
