@@ -1,15 +1,32 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import localFont from "next/font/local";
 import "./globals.css";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
+const cursive = localFont({
+  src: [
+    {
+      path: "./fonts/IRANSansBold.ttf",
+      style: "bold",
+      weight: "700",
+    },
+    {
+      path: "./fonts/IRANSansRegular.ttf",
+      style: "normal",
+      weight: "400",
+    },
+    {
+      path: "./fonts/IRANSansLight.ttf",
+      style: "light",
+      weight: "300",
+    },
+    {
+      path: "./fonts/IRANSansUltraLight.ttf",
+      style: "ultraLight",
+      weight: "100",
+    },
+  ],
+  variable: "--font-cursive",
+  display: "swap",
 });
 
 export const metadata: Metadata = {
@@ -19,16 +36,10 @@ export const metadata: Metadata = {
 
 export default function RootLayout({
   children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
+}: Readonly<{ children: React.ReactNode }>) {
   return (
-    <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
-        {children}
-      </body>
+    <html lang="fa">
+      <body className={`${cursive.variable}`}>{children}</body>
     </html>
   );
 }

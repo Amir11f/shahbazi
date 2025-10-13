@@ -16,6 +16,7 @@ export default function Footer() {
               </div>
               <Image
                 src="/images/BusnessLogo.png"
+                alt="null"
                 width={70}
                 height={70}
                 className=" w-[70px] h-[70px]"
@@ -66,9 +67,9 @@ export default function Footer() {
         </div>
       </div>
       <div className="flex flex-row gap-2.5 mt-26 sm:hidden">
-        <Image src="/images/IranFlag.jpg" width={45} height={31} />
-        <Image src="/images/IranFlag.jpg" width={45} height={31} />
-        <Image src="/images/IranFlag.jpg" width={45} height={31} />
+        <Image src="/images/IranFlag.jpg" alt="null" width={45} height={31} />
+        <Image src="/images/IranFlag.jpg" alt="null" width={45} height={31} />
+        <Image src="/images/IranFlag.jpg" alt="null" width={45} height={31} />
       </div>
     </div>
   );

@@ -36,6 +36,7 @@ export default function Navbar() {
               </p>
             </div>
             <Image
+              alt="null"
               src="/images/BusnessLogo.png"
               width={48}
               height={48}
