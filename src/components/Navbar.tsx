@@ -28,7 +28,7 @@ export default function Navbar() {
               <a
                 key={item.id}
                 href={item.link}
-                className="hidden xl:text-black font-thin xl:text-base xl:mx-0 xl:px-0 xl:flex xl:items-center xl:justify-center "
+                className="hidden xl:text-black font-thin xl:text-base xl:mx-0 xl:px-0 xl:flex xl:items-center xl:justify-center transition-transform duration-200 ease-in-out hover:-translate-y-1"
               >
                 {item.title}
               </a>

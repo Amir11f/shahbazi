@@ -11,7 +11,7 @@ export default function ProductsSection() {
         {fullProductItems.map((item) => (
           <div
             key={item.id}
-            className="w-[169px] h-[147px] bg-[#F5F5F5] flex flex-col-reverse rounded-lg items-center justify-center gap-4 sm:w-[269px] sm:h-[234px] hover:bg-golden transition duration-150 cursor-pointer"
+            className="w-[169px] h-[147px] bg-[#F5F5F5] flex flex-col-reverse rounded-lg items-center justify-center gap-4 sm:w-[269px] sm:h-[234px] hover:bg-golden cursor-pointer transition duration-200 hover:scale-105  ease-in-out"
           >
             <p className=" text-xs sm:text-xl">{item.name}</p>
             <Image

@@ -34,12 +34,20 @@ export default function Footer() {
             </p>
             <div className="flex flex-row w-full mt-2 sm:mt-0 gap-6 sm:gap-0 text-right font-light sm:flex-col ">
               <div className="flex flex-col gap-1 w-full text-end text-sm">
-                <p className="">صفحه خانه</p>
-                <p>فروشگاه</p>
+                <p className="transition duration-100 hover:scale-115 ease-in-out cursor-pointer">
+                  صفحه خانه
+                </p>
+                <p className="transition duration-100 hover:scale-115 ease-in-out cursor-pointer">
+                  فروشگاه
+                </p>
               </div>
               <div className="flex flex-col gap-1 sm:mt-2 w-full text-sm sm:text-right">
-                <p>ارتباط با ما</p>
-                <p>درباره ی ما</p>
+                <p className="transition duration-100 hover:scale-115 ease-in-out cursor-pointer">
+                  ارتباط با ما
+                </p>
+                <p className="transition duration-100 hover:scale-115 ease-in-out cursor-pointer">
+                  درباره ی ما
+                </p>
               </div>
               <div className="flex flex-col"></div>
             </div>
@@ -75,10 +83,10 @@ export default function Footer() {
         </div>
         <div className="flex flex-col items-center">
           <div className="flex flex-row mt-10 gap-6  sm:self-end">
-            <XIcon className="hover:text-golden cursor-pointer transition duration-100" />
-            <InstagramIcon className="hover:text-golden cursor-pointer transition duration-100" />
-            <GoogleIcon className="hover:text-golden cursor-pointer transition duration-100" />
-            <YouTubeIcon className="hover:text-golden cursor-pointer transition duration-100" />
+            <XIcon className="hover:text-golden  transition duration-100 hover:scale-115 ease-in-out cursor-pointer" />
+            <InstagramIcon className="hover:text-golden  transition duration-100 hover:scale-115  ease-in-out cursor-pointer" />
+            <GoogleIcon className="hover:text-golden  transition duration-100 hover:scale-115  ease-in-out cursor-pointer" />
+            <YouTubeIcon className="hover:text-golden  transition duration-100 hover:scale-115  ease-in-out cursor-pointer" />
           </div>
           <p className="text-[14px]/6 w-[300px] text-center mt-5 sm:text-end text-[#d0d0d0] sm:w-[480px]">
             تمام حقوق این سایت محفوظ میباشد. کپی و استفاده غیر مجاز حرام می

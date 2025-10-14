@@ -2,6 +2,7 @@ import BlackResumeBox from "@/components/BlackResumeBox";
 import ContactUsNavbar from "@/components/ContactUsNavbar";
 import CoWorder from "@/components/CoWorder";
 import Footer from "@/components/Footer";
+import IK10Projects from "@/components/IK10Projects";
 import JoinOurNewsletter from "@/components/JoinOurNewsletter";
 import MahziarIntroduction from "@/components/MahziarIntroduction";
 import MostPopularServices from "@/components/MostPopularServices";
@@ -12,16 +13,17 @@ import NewestVideos from "@/components/NewestVideos";
 export default function Home() {
   return (
     <>
-      <ContactUsNavbar />
+      {/* <ContactUsNavbar />
       <Navbar />
-      <MahziarIntroduction />
-      <MostPopularServices />
+      <MahziarIntroduction /> */}
+      <IK10Projects />
+      {/* <MostPopularServices />
       <BlackResumeBox />
       <MostSellingItems />
       <CoWorder />
       <NewestVideos />
       <JoinOurNewsletter />
-      <Footer />
+      <Footer /> */}
     </>
   );
 }
