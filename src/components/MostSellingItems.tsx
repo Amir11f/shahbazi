@@ -14,7 +14,10 @@ export default function MostSellingItems() {
       </div>
       <div className="flex flex-col sm:grid sm:grid-cols-2 sm:gap-8 xl:grid-cols-4 xl-gap-7 ">
         {items.map((item) => (
-          <div className="flex flex-col " key={item.id}>
+          <div
+            className="flex flex-col transition duration-100 hover:scale-105 ease-in-out"
+            key={item.id}
+          >
             <Image
               src="/images/securityCamera.jpg"
               alt="null"
