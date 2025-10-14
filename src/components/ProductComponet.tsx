@@ -24,7 +24,7 @@ export default function ProductComponet({ slug }: { slug: number }) {
           <div className="flex flex-row gap-2 w-full items-start justify-center mt-3 sm:gap-4 sm:mt-10">
             {findData?.color?.map((item: any) => (
               <div
-                className={`bg-[${item}] w-[75px] h-[77px] rounded-[5px] sm:w-[120px] sm:h-[120px] sm:rounded-lg`}
+                className={`bg-golden w-[75px] h-[77px] rounded-[5px] sm:w-[120px] sm:h-[120px] sm:rounded-lg`}
               ></div>
             ))}
           </div>
@@ -48,7 +48,7 @@ export default function ProductComponet({ slug }: { slug: number }) {
           <div className="flex flex-row mt-2 gap-1.5">
             {findData?.color.map((item) => (
               <div
-                className={`bg-[${item}] w-[25px] h-[25px] rounded-[5px] sm:h-12 sm:w-12 xl:rounded-md`}
+                className={`bg-golden w-[25px] h-[25px] rounded-[5px] sm:h-12 sm:w-12 xl:rounded-md`}
               ></div>
             ))}
           </div>
@@ -112,22 +112,23 @@ export default function ProductComponet({ slug }: { slug: number }) {
           </div>
           <div className="flex flex-row-reverse justify-between w-full mt-8 gap-2 text-white rounded-lg sm:mt-13 sm:gap-4">
             <div className="flex flex-row bg-golden rounded-[5px]">
-              <div className="w-[294px] h-[32px] flex flex-row-reverse justify-between sm:w-[560px] sm:h-[61px]">
-                <div className="gap-[10px] flex flex-row items-center justify-center mr-3 sm:gap-5 sm:mr-5">
+              <div className="w-[294px] h-[32px] flex flex-row-reverse justify-between sm:w-[560px] sm:h-[61px] ">
+                <div className="gap-[10px] flex flex-row items-center justify-center mr-3 sm:gap-5 sm:mr-5 cursor-pointer">
                   <p className="text-[10px] sm:text-xl">افزودن به سبد</p>
                   <ShopBagIcon className="w-[11px] h-3 sm:w-5 sm:h-5.5" />
                 </div>
-                <div className="flex flex-row gap-2.5 items-center justify-center ml-4 text-[13px] sm:text-2xl sm:gap-5">
-                  <div>+</div>
-                  <p>22</p>
-                  <div className="relative bottom-1 sm:bottom-2.5 sm:text-3xl">
+                <hr className=" w-5 sm:w-10 rotate-90 h-1 relative top-3.5 sm:top-7" />
+                <div className="flex flex-row gap-2.5 items-center justify-center ml-4 text-[13px] sm:text-2xl sm:gap-5 ">
+                  <div className="cursor-pointer">+</div>
+                  <p className="">22</p>
+                  <div className="relative bottom-1 sm:bottom-2.5 sm:text-3xl cursor-pointer">
                     _
                   </div>
                 </div>
               </div>
             </div>
-            <div className="w-8 h-8 sm:min-w-[61px] sm:min-h-[61px] border-1 border-golden rounded-[5px] sm:rounded-lg flex items-center justify-center">
-              <HeartIcon className="w-5 h-5 sm:w-9 sm:h-9" />
+            <div className="w-8 h-8 sm:min-w-[61px] sm:min-h-[61px] border-1 border-golden rounded-[5px] sm:rounded-lg flex items-center justify-center cursor-pointer">
+              <HeartIcon className="w-5 h-5 sm:w-9 text-golden sm:h-9 hover:text-red-400 transition duration-150 " />
             </div>
           </div>
           <div className="flex flex-row-reverse mt-5 gap-2 sm:gap-3 sm:mt-8">
