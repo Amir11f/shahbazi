@@ -10,12 +10,12 @@ export default async function Page({ params }: { params: { slug: number } }) {
 
   return (
     <div>
-      {/* <ProductComponet slug={slug} /> */}
+      <ProductComponet slug={slug} />
       <KnowAboutHikVision />
-      {/* <ProductBlackBox /> */}
-      {/* <MostSellingItems /> */}
-      {/* <ProductForm /> */}
-      {/* <ProductUserOpinion /> */}
+      <ProductBlackBox />
+      <MostSellingItems />
+      <ProductForm />
+      <ProductUserOpinion />
     </div>
   );
 }

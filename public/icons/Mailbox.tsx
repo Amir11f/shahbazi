@@ -1,4 +1,6 @@
-export default function MailBox() {
+import { SVGProps } from "react";
+
+export default function MailBox(props: SVGProps<SVGSVGElement>) {
   return (
     <svg
       width="25"
@@ -6,6 +8,7 @@ export default function MailBox() {
       viewBox="0 0 25 24"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
+      {...props}
     >
       <path
         d="M11 22V20M15 22V20"

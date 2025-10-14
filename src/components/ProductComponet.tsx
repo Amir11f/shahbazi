@@ -1,6 +1,8 @@
 import React from "react";
 import { fullProductItems } from "@/data/fullInfoProductsItem";
 import Image from "next/image";
+import { Vector, shopBagIcon, MailBox } from "@/index";
+import ShopBagIcon from "../../public/icons/shopBagIcon";
 
 export default function ProductComponet({ slug }: { slug: number }) {
   const id = slug;
@@ -31,9 +33,12 @@ export default function ProductComponet({ slug }: { slug: number }) {
           <p className="text-[7px] font-thin sm:text-[13px]">
             خانه/محصولات دوربین /محصول
           </p>
-          <p className="text-base font-bold mt-1.5 sm:text-[32px]">
-            دوربین شماره 12
-          </p>
+          <div className="flex flex-row gap-4 items-center justify-center">
+            <p className="text-base font-bold mt-1.5 sm:text-[32px]">
+              دوربین شماره 12
+            </p>
+            <Vector className=" hidden xl:flex w-8.5 h-8.5 relative top-1 " />
+          </div>
           <div className="flex flex-row gap-6 mt-5 sm:flex-col sm:gap-2 font-normal sm:mt-8 text-[#030303]">
             {findData?.material.map((item) => (
               <div className="text-[11px] sm:text-xl "> {item} : بدنه </div>
@@ -110,7 +115,7 @@ export default function ProductComponet({ slug }: { slug: number }) {
               <div className="w-[294px] h-[32px] flex flex-row-reverse justify-between sm:w-[560px] sm:h-[61px]">
                 <div className="gap-[10px] flex flex-row items-center justify-center mr-3 sm:gap-5 sm:mr-5">
                   <p className="text-[10px] sm:text-xl">افزودن به سبد</p>
-                  <div className="w-[11px] h-3 bg-amber-950 sm:w-5 sm:h-5.5"></div>
+                  <ShopBagIcon className="w-[11px] h-3 sm:w-5 sm:h-5.5" />
                 </div>
                 <div className="flex flex-row gap-2.5 items-center justify-center ml-4 text-[13px] sm:text-2xl sm:gap-5">
                   <div>+</div>
@@ -124,7 +129,7 @@ export default function ProductComponet({ slug }: { slug: number }) {
             <div className="w-8 h-8 sm:min-w-[61px] sm:min-h-[61px] border-1 border-[#C9A35B] rounded-[5px] sm:rounded-lg"></div>
           </div>
           <div className="flex flex-row-reverse mt-5 gap-2 sm:gap-3 sm:mt-8">
-            <div className="w-3 h-3 bg-amber-900 sm:w-6 sm:h-6"></div>
+            <MailBox className="w-3 h-3 sm:w-6 sm:h-6" />
             <p className="text-[10px] font-bold sm:text-[18px]">
               ضمانت و گارانتی یک ساله
             </p>

@@ -1,5 +1,6 @@
 import navbarItems from "@/data/navbarItems";
 import Image from "next/image";
+import { SearchIcon, UserCircleIcon } from "@/index";
 
 export default function Navbar() {
   return (
@@ -9,10 +10,15 @@ export default function Navbar() {
           <button className="w-8 h-8 bg-golden self-center rounded-lg sm:w-12 sm:h-12 sm:rounded-xl xl:hidden"></button>
           <div className="hidden xl:flex xl:flex-row ">
             <div className=" hidden xl:flex xl:flex-row xl:gap-1.5 xl:items-center ">
-              <button className=" hidden xl:bg-[#C9A35B] xl:w-[141px] xl:h-12 xl:flex xl:flex-row xl:justify-center xl:items-center xl:rounded-xl ">
-                <p className=" hidden xl:text-lg xl:text-white">عضویت</p>
+              <button className=" hidden xl:bg-[#C9A35B] xl:w-[141px] xl:h-12 xl:flex xl:flex-row-reverse xl:gap-3 xl:justify-center xl:items-center xl:rounded-xl ">
+                <p className=" hidden xl:flex xl:text-lg xl:text-white">
+                  عضویت
+                </p>
+                <UserCircleIcon />
               </button>
-              <button className=" hidden xl:flex xl:w-12 xl:h-12 xl:bg-[#C9A35B] xl:rounded-xl items-center"></button>
+              <button className=" hidden xl:flex xl:w-12 xl:h-12 xl:bg-[#C9A35B] xl:rounded-xl justify-center items-center">
+                <SearchIcon />
+              </button>
             </div>
           </div>
           <div className="hidden xl:flex xl:flex-row text-black xl:gap-4">

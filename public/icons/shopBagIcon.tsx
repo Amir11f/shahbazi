@@ -1,6 +1,6 @@
-import React from "react";
+import React, { SVGProps } from "react";
 
-export default function ShopBagIcon() {
+export default function ShopBagIcon(props: SVGProps<SVGSVGElement>) {
   return (
     <svg
       width="22"
@@ -8,6 +8,7 @@ export default function ShopBagIcon() {
       viewBox="0 0 22 24"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
+      {...props}
     >
       <path
         d="M14.4226 10.6634V4.23925C14.4226 2.51593 13.0256 1.1189 11.3023 1.1189H9.46606C7.74273 1.1189 6.3457 2.51593 6.3457 4.23925V10.6634"
