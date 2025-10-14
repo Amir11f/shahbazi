@@ -10,6 +10,10 @@ body{
   font-family: 'IRANSansFaNum', sans-serif;
 }
 
+button{
+  cursor: pointer;
+}
+
 /* globals.css */
 ::-webkit-scrollbar {
   height: 1px;
