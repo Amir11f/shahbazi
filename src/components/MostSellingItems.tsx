@@ -8,19 +8,19 @@ export default function MostSellingItems() {
         <p className="text-2xl mb-12 sm:text-3xl text-[#000000] xl:text-4xl font-thin">
           پرفروشترین ها
         </p>
-        <button className=" hidden sm:block w-[187px] h-12 bg-[#133B3224] sm:text-xl font-light text-[#151517] rounded-lg xl:w-[256px] xl:h-14 font-thin">
+        <button className=" hidden sm:block w-[187px] h-12 bg-[#133B3224] transition duration-100 hover:bg-[#a7a7a7] sm:text-xl text-[#151517] rounded-lg xl:w-[256px] xl:h-14 font-normal">
           ورود به فروشگاه
         </button>
       </div>
-      <div className="flex flex-col sm:grid sm:grid-cols-2 sm:gap-8 xl:grid-cols-4 xl-gap-7">
+      <div className="flex flex-col sm:grid sm:grid-cols-2 sm:gap-8 xl:grid-cols-4 xl-gap-7 ">
         {items.map((item) => (
-          <div className="flex flex-col" key={item.id}>
+          <div className="flex flex-col " key={item.id}>
             <Image
               src="/images/securityCamera.jpg"
               alt="null"
               width={333}
               height={250}
-              className="w-[333px] h-[250px] sm:w-[299px] sm:h-[313px] border-[#DFDFDF] border-1 rounded-lg xl:mb-3"
+              className="w-[333px] h-[250px] sm:w-[299px] sm:h-[313px] border-[#DFDFDF] border-1 rounded-lg xl:mb-3 cursor-pointer hover:border-golden transition duration-100"
             />
             <div className="flex flex-row-reverse font-thin justify-between mt-2">
               <p className="text-sm text-[#030303] font-thin">{item.name}</p>
@@ -31,13 +31,13 @@ export default function MostSellingItems() {
                 </p>
               </div>
             </div>
-            <p className="text-sm text-[#C9A35B] mt-1.5 mb-6 font-thin">
+            <p className="text-sm text-golden mt-1.5 mb-6 font-thin">
               {item.price}
             </p>
           </div>
         ))}
       </div>
-      <button className="w-[333px] h-12 bg-[#133B3224] text-lg text-[#151517] rounded-lg mt-6 sm:hidden">
+      <button className="w-[333px] h-12 bg-[#133B3224] text-lg text-[#151517] rounded-lg mt-6 sm:hidden transition duration-100 hover:bg-[#a7a7a7] ">
         ورود به فروشگاه
       </button>
     </div>

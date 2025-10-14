@@ -10,8 +10,8 @@ export default function Footer() {
             <div className="flex flex-row gap-4 sm:gap-4  ">
               <div className="flex flex-col justify-around sm:mr-0 ">
                 <p className="font-bold text-base ">مهزیار شهبازی نژاد</p>
-                <hr className="bg-[#DFDFDF] text-[#4f4f4f] relative top-1 xl:w-40 xl:self-end" />
-                <p className="text-[7px]  sm:text-[10px] text-[#DFDFDF] xl:w-50">
+                <hr className=" text-[#4f4f4f] relative top-1 xl:w-40 xl:self-end" />
+                <p className="text-[7px]  sm:text-[10px] text-gray xl:w-50">
                   مشاوره و راه اندازی سیستم های امنیتی
                 </p>
               </div>
@@ -75,10 +75,10 @@ export default function Footer() {
         </div>
         <div className="flex flex-col items-center">
           <div className="flex flex-row mt-10 gap-6  sm:self-end">
-            <XIcon />
-            <InstagramIcon />
-            <GoogleIcon />
-            <YouTubeIcon />
+            <XIcon className="hover:text-golden cursor-pointer transition duration-100" />
+            <InstagramIcon className="hover:text-golden cursor-pointer transition duration-100" />
+            <GoogleIcon className="hover:text-golden cursor-pointer transition duration-100" />
+            <YouTubeIcon className="hover:text-golden cursor-pointer transition duration-100" />
           </div>
           <p className="text-[14px]/6 w-[300px] text-center mt-5 sm:text-end text-[#d0d0d0] sm:w-[480px]">
             تمام حقوق این سایت محفوظ میباشد. کپی و استفاده غیر مجاز حرام می

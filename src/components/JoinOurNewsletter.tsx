@@ -7,10 +7,10 @@ export default function JoinOurNewsletter() {
         <div className="flex flex-row-reverse ">
           <input
             type="text"
-            className="w-[190px] h-8.5 bg-[#F0EFEB] rounded-md placeholder:text-[#C9A35B] placeholder:text-right placeholder:text-xs placeholder:mr-4 sm:w-[250px] sm:h-12.5 sm:placeholder:text-base sm:placeholder:mr-6"
+            className="w-[190px] h-8.5 bg-[#F0EFEB] rounded-md placeholder:text-golden placeholder:text-right placeholder:text-xs placeholder:mr-4 sm:w-[250px] sm:h-12.5 sm:placeholder:text-base sm:placeholder:mr-6 focus:outline-none focus:border-1 focus:border-golden  "
             placeholder="... ایمیل شما"
           />
-          <button className="w-[63px] h-8.5 bg-[#151517] rounded-md relative left-2 text-xs text-[#F0EFEB] sm:w-22.5 sm:h-12.5 sm:text-base ">
+          <button className="w-[63px] h-8.5 bg-[#151517] rounded-md relative left-2 cursor-pointer hover:bg-golden transition duration-100 text-xs text-[#F0EFEB] sm:w-22.5 sm:h-12.5 sm:text-base ">
             ارسال
           </button>
         </div>

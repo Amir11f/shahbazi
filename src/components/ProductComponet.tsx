@@ -53,10 +53,10 @@ export default function ProductComponet({ slug }: { slug: number }) {
             ))}
           </div>
           <div className="flex flex-row-reverse gap-1 mt-6 sm:mt-10">
-            <p className="font-bold text-[#C9A35B] text-base sm:text-3xl">
+            <p className="font-bold text-golden text-base sm:text-3xl">
               {findData?.curruntPrice}
             </p>
-            <p className="text-xs text-[#C9A35B] font-bold relative top-1 sm:text-lg">
+            <p className="text-xs text-golden font-bold relative top-1 sm:text-lg">
               تومان
             </p>
           </div>
@@ -111,7 +111,7 @@ export default function ProductComponet({ slug }: { slug: number }) {
             </div>
           </div>
           <div className="flex flex-row-reverse justify-between w-full mt-8 gap-2 text-white rounded-lg sm:mt-13 sm:gap-4">
-            <div className="flex flex-row bg-[#C9A35B] rounded-[5px]">
+            <div className="flex flex-row bg-golden rounded-[5px]">
               <div className="w-[294px] h-[32px] flex flex-row-reverse justify-between sm:w-[560px] sm:h-[61px]">
                 <div className="gap-[10px] flex flex-row items-center justify-center mr-3 sm:gap-5 sm:mr-5">
                   <p className="text-[10px] sm:text-xl">افزودن به سبد</p>
@@ -126,7 +126,7 @@ export default function ProductComponet({ slug }: { slug: number }) {
                 </div>
               </div>
             </div>
-            <div className="w-8 h-8 sm:min-w-[61px] sm:min-h-[61px] border-1 border-[#C9A35B] rounded-[5px] sm:rounded-lg flex items-center justify-center">
+            <div className="w-8 h-8 sm:min-w-[61px] sm:min-h-[61px] border-1 border-golden rounded-[5px] sm:rounded-lg flex items-center justify-center">
               <HeartIcon className="w-5 h-5 sm:w-9 sm:h-9" />
             </div>
           </div>

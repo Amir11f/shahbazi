@@ -2,7 +2,7 @@ import { HeadphonesIcon } from "@/index";
 
 export default function ProductsIntroduction() {
   return (
-    <div className="flex flex-col items-center font-cursive gap-4 sm:gap-6 xl:gap-7">
+    <div className="flex flex-col items-center font-cursive gap-4 sm:gap-6 xl:gap-7 ">
       <p className="text-3xl font-bold sm:text-[51px] xl:text-[64px]">
         هایپر اینترنتی مهزیار شهبازی
       </p>
