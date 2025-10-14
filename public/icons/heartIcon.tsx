@@ -1,21 +1,23 @@
-import * as React from "react";
+import React from "react";
+
+type HeartIconProps = React.SVGProps<SVGSVGElement> & {
+  size?: number;
+  color?: string;
+};
 
 export default function HeartIcon({
   size = 36,
   color = "#C9A35B",
   ...props
-}: {
-  size?: number;
-  color?: string;
-}) {
+}: HeartIconProps) {
   return (
     <svg
       width={size}
-      height={(size * 37) / 36} // maintain aspect ratio
+      height={(size * 37) / 36} // keep aspect ratio
       viewBox="0 0 36 37"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
-      {...props}
+      {...props} // allows className, onClick, etc.
     >
       <path
         fillRule="evenodd"

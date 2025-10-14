@@ -1,7 +1,7 @@
 import React from "react";
 import { fullProductItems } from "@/data/fullInfoProductsItem";
 import Image from "next/image";
-import { Vector, shopBagIcon, MailBox } from "@/index";
+import { Vector, shopBagIcon, MailBox, HeartIcon } from "@/index";
 import ShopBagIcon from "../../public/icons/shopBagIcon";
 
 export default function ProductComponet({ slug }: { slug: number }) {
@@ -126,7 +126,9 @@ export default function ProductComponet({ slug }: { slug: number }) {
                 </div>
               </div>
             </div>
-            <div className="w-8 h-8 sm:min-w-[61px] sm:min-h-[61px] border-1 border-[#C9A35B] rounded-[5px] sm:rounded-lg"></div>
+            <div className="w-8 h-8 sm:min-w-[61px] sm:min-h-[61px] border-1 border-[#C9A35B] rounded-[5px] sm:rounded-lg flex items-center justify-center">
+              <HeartIcon className="w-5 h-5 sm:w-9 sm:h-9" />
+            </div>
           </div>
           <div className="flex flex-row-reverse mt-5 gap-2 sm:gap-3 sm:mt-8">
             <MailBox className="w-3 h-3 sm:w-6 sm:h-6" />
