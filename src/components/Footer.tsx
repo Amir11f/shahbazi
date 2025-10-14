@@ -1,16 +1,17 @@
 import Image from "next/image";
+import { XIcon, GoogleIcon, YouTubeIcon, InstagramIcon } from "@/index";
 
 export default function Footer() {
   return (
-    <div className="flex flex-col items-center w-full font-cursive bg-[url('/images/FooterBackground.svg')] text-white h-[869px]">
+    <div className="flex flex-col items-center w-full font-cursive bg-[url('/images/FooterBackground.svg')] text-white h-[899px] sm:h-[780px] xl:h-[480px]">
       <div className="flex flex-col items-center gap-3 justify-center w-[85%] sm:w-full sm:gap-8 sm:flex-row-reverse xl:gap-25 xl:mt-20  sm:text-right ">
         <div className="flex flex-col items-center sm:relative sm:-top-4 xl:flex-row-reverse xl:gap-25">
           <div className="flex flex-col mt-13 sm:mt-22 xl:mt-4 ">
             <div className="flex flex-row gap-4 sm:gap-4  ">
               <div className="flex flex-col justify-around sm:mr-0 ">
                 <p className="font-bold text-base ">مهزیار شهبازی نژاد</p>
-                <hr className="bg-[#DFDFDF]" />
-                <p className="text-[7px] text-xs">
+                <hr className="bg-[#DFDFDF] text-[#4f4f4f] relative top-1 xl:w-40 xl:self-end" />
+                <p className="text-[7px]  sm:text-[10px] text-[#DFDFDF] xl:w-50">
                   مشاوره و راه اندازی سیستم های امنیتی
                 </p>
               </div>
@@ -22,7 +23,7 @@ export default function Footer() {
                 className=" w-[70px] h-[70px]"
               ></Image>
             </div>
-            <p className="font-light text-sm mt-3 text-center  sm:text-end mb-10 w-[200px] ">
+            <p className="font-light text-sm mt-3 text-center  sm:text-end mb-10 w-[200px] sm:w-[240px] ">
               لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ استفاده
               از طراحان گرافیک
             </p>
@@ -66,10 +67,24 @@ export default function Footer() {
           </div>
         </div>
       </div>
-      <div className="flex flex-row gap-2.5 mt-26 sm:hidden">
-        <Image src="/images/IranFlag.jpg" alt="null" width={45} height={31} />
-        <Image src="/images/IranFlag.jpg" alt="null" width={45} height={31} />
-        <Image src="/images/IranFlag.jpg" alt="null" width={45} height={31} />
+      <div className="flex flex-col items-center xl:w-[1117px] xl:flex-row xl:justify-between ">
+        <div className="flex flex-row gap-2.5 mt-20 xl:mt-26 sm:mt-37  sm:relative sm:left-40 xl:static">
+          <Image src="/images/IranFlag.jpg" alt="null" width={45} height={31} />
+          <Image src="/images/IranFlag.jpg" alt="null" width={45} height={31} />
+          <Image src="/images/IranFlag.jpg" alt="null" width={45} height={31} />
+        </div>
+        <div className="flex flex-col items-center">
+          <div className="flex flex-row mt-10 gap-6  sm:self-end">
+            <XIcon />
+            <InstagramIcon />
+            <GoogleIcon />
+            <YouTubeIcon />
+          </div>
+          <p className="text-[14px]/6 w-[300px] text-center mt-5 sm:text-end text-[#d0d0d0] sm:w-[480px]">
+            تمام حقوق این سایت محفوظ میباشد. کپی و استفاده غیر مجاز حرام می
+            باشد.
+          </p>
+        </div>
       </div>
     </div>
   );

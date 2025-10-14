@@ -1,6 +1,8 @@
 import React from "react";
 import { userComments } from "@/data/userComments";
 import type { UserComments } from "@/data/userComments";
+import { ClockIcon } from "@/index";
+
 export default function ProductUserOpinion() {
   return (
     <div className=" flex flex-col items-center font-cursive text-[#030303]">
@@ -17,7 +19,7 @@ export default function ProductUserOpinion() {
               <p className="text-sm text-[#030303]">{item.name}</p>
               <div className="flex flex-row gap-2">
                 <p className="text-sm">{item.dateOfComment}</p>
-                <div className="w-4 h-4 bg-red-500"></div>
+                <ClockIcon className="w-4 h-4" />
               </div>
             </div>
             <p className="text-sm w-[281px] mb-8 sm:w-[566px] xl:w-[1052px]">

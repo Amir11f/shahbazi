@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { Vector } from "@/index";
 
 export default function KnowAboutHikVision() {
   return (
@@ -13,7 +14,15 @@ export default function KnowAboutHikVision() {
             استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در
             ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز
           </p>
-          <div className="w-[325px] h-10 rounded-lg bg-[#C9A35B] mt-8 mb-11 sm:w-[432px] sm:h-[40px] xl:w-[148px] xl:self-end "></div>
+          <div className="w-[325px] h-10 rounded-lg bg-[#C9A35B] mt-8 mb-11 sm:w-[432px] sm:h-[40px] xl:w-[148px] xl:self-end flex flex-row-reverse items-center justify-center gap-2">
+            <p className="text-sm text-white block">بیشتر</p>
+            <Vector
+              className="w-3.5 h-3.5 rotate-90  font-bold
+              "
+              stroke="white"
+              fill="red"
+            />
+          </div>
         </div>
         <Image
           src="/images/SecurityCameraHigh.jpg"
