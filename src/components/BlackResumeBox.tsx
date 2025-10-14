@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function BlackResumeBox() {
   return (
-    <div className="flex justify-center items-center flex-col font-cursive">
+    <div className="flex justify-center w-full items-center flex-col font-cursive">
       <Image
         src="/images/MobileBlackBox.svg"
         alt="Resume Box"
@@ -24,7 +24,7 @@ export default function BlackResumeBox() {
         height={237}
         className=" hidden xl:flex "
       />
-      <div className=" text-white rounded-[40px] p-10 w-full mx-auto relative -top-85 sm:-top-95 sm:-left-43 xl:-left-72 xl:-top-60">
+      <div className=" text-white rounded-[40px] p-10 w-[373px] mx-auto relative -top-85 sm:-top-95 sm:-left-43 xl:-left-72 xl:-top-60">
         <div className="grid grid-cols-1 text-xs gap-7 sm:text-base sm:flex sm:flex-col sm:w-160 xl:w-220 xl:gap-0 ">
           {/* Item 1 */}
           <div className="flex items-center justify-end gap-4 w-full text-right relative xl:-bottom-1 ">

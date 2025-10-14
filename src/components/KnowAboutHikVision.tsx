@@ -14,7 +14,7 @@ export default function KnowAboutHikVision() {
             استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در
             ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز
           </p>
-          <div className="w-[325px] h-10 rounded-lg bg-[#C9A35B] mt-8 mb-11 sm:w-[432px] sm:h-[40px] xl:w-[148px] xl:self-end flex flex-row-reverse items-center justify-center gap-2">
+          <div className="w-[325px] h-10 rounded-lg bg-golden mt-8 mb-11 sm:w-[432px] sm:h-[40px] xl:w-[148px] xl:self-end flex flex-row-reverse items-center justify-center gap-2 cursor-pointer hover:bg-hover transition duration-100">
             <p className="text-sm text-white block">بیشتر</p>
             <Vector
               className="w-3.5 h-3.5 rotate-90  font-bold

@@ -7,7 +7,7 @@ export default function NewestVideos() {
         <p className="text-2xl mb-8 sm:text-3xl xl:text-4xl font-thin">
           جدیدترین ویدیو ها
         </p>
-        <button className="hidden sm:block bg-[#C9A35B] text-[#FFFFFF] sm:w-[144px] sm:h-12 sm:rounded-lg xl:text-xl font-normal">
+        <button className="hidden sm:block bg-golden cursor-pointer hover:bg-hover transition duration-100 text-[#FFFFFF] sm:w-[144px] sm:h-12 sm:rounded-lg xl:text-xl font-normal">
           بیشتر
         </button>
       </div>
@@ -36,7 +36,7 @@ export default function NewestVideos() {
           ></Image>
         </div>
       </div>
-      <button className="w-27 h-9 bg-[#C9A35B] text-[#FFFFFF] text-base rounded-md mt-6 sm:hidden">
+      <button className="w-27 h-9 bg-golden text-[#FFFFFF] text-base rounded-md mt-6 sm:hidden">
         بیشتر
       </button>
     </div>

@@ -7,6 +7,10 @@ module.exports = {
     extend: {
       colors: {
         golden: "#C9A35B", // your custom color
+        gray:"#DFDFDF",
+        bdark:"#151517",
+        dark:'#000000',
+        hover:"#64460d",
       },
       fontFamily: {
         cursive: 'var(--font-cursive)'
