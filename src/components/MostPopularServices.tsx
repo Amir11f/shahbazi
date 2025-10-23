@@ -3,7 +3,7 @@ import { popularServices } from "../data/mostPopularServices";
 
 export default function MostPopularServices() {
   return (
-    <div className="flex flex-col items-center font-cursive">
+    <div className="flex flex-col items-center font-cursive mb-25 xl:mt-20">
       <p className="text-2xl mb-9 sm:text-3xl xl:text-4xl sm:mb-12 font-thin">
         پرطرفدارترین خدمات
       </p>

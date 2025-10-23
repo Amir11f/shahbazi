@@ -3,7 +3,7 @@ import React from "react";
 
 export default function MahziarIntroduction() {
   return (
-    <div className="flex flex-col-reverse items-center sm:flex-col  xl:justify-around font-cursive xl:flex-col">
+    <div className="flex flex-col-reverse items-center sm:flex-col  xl:justify-around font-cursive xl:flex-col mb-40 sm:mb-20 xl:mb-0">
       <div className="flex flex-col-reverse items-center sm:flex-col xl:flex-row-reverse xl:justify-around font-cursive ">
         <div className="flex flex-col items-center text-center mx-3 sm:w-[70%] xl:w-[30%]">
           <p className="text-[28px] font-bold mb-3 sm:text-[48px]">
@@ -34,7 +34,7 @@ export default function MahziarIntroduction() {
           </div>
         </div>
       </div>
-      <div className=" hidden sm:flex flex-col bg-black w-[99%] xl:w-[87%] h-[135px] mb-20 rounded-xl text-white items-center justify-center gap-y-5 xl:flex-row">
+      <div className=" hidden sm:flex flex-col bg-black w-[99%] xl:w-[87%] h-[135px] mb-20 rounded-xl text-white items-center justify-center gap-y-5 xl:flex-row sm:mb-0 sm:relative sm:-top-10 ">
         <div className="flex flex-row gap-5 text-base font-thin">
           <p>پروژه نصب دوربین مدار بسته</p>
           <hr className="text-[#424242] w-7 h-[1px] rotate-90 relative -bottom-3" />
