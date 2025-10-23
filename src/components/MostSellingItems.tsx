@@ -3,9 +3,9 @@ import { items } from "../data/mostSellingItems";
 
 export default function MostSellingItems() {
   return (
-    <div className="flex flex-col items-center sm:w-full self-center font-cursive ">
-      <div className="sm:flex sm:flex-row-reverse sm:justify-between sm:w-auto sm:gap-80 xl:w-auto xl:gap-[860px] xl:mb-8 sm:mb-17 ">
-        <p className="text-2xl mb-12 sm:text-3xl text-[#000000] xl:text-4xl font-thin">
+    <div className="flex flex-col items-center sm:w-full self-center font-cursive relative -top-60 sm:-top-95 xl:-top-65">
+      <div className="sm:flex sm:flex-row-reverse sm:justify-between sm:w-auto sm:gap-70 xl:gap-[760px] xl:mb-8 sm:mb-17 xl:w-auto ">
+        <p className="text-2xl mb-12 sm:text-3xl text-[#000000] xl:text-4xl font-thin ">
           پرفروشترین ها
         </p>
         <button className=" hidden sm:block w-[187px] h-12 bg-[#133B3224] transition duration-100 hover:bg-[#a7a7a7] sm:text-xl text-[#151517] rounded-lg xl:w-[256px] xl:h-14 font-normal">
@@ -23,7 +23,7 @@ export default function MostSellingItems() {
               alt="null"
               width={333}
               height={250}
-              className="w-[333px] h-[250px] sm:w-[299px] sm:h-[313px] border-[#DFDFDF] border-1 rounded-lg xl:mb-3 cursor-pointer hover:border-golden transition duration-100"
+              className="w-[333px] h-[250px] sm:w-[299px] sm:h-[313px] border-[#DFDFDF] border-1 rounded-lg xl:mb-3 cursor-pointer hover:border-golden transition duration-100 xl:w-[267px] xl:h-[313px]"
             />
             <div className="flex flex-row-reverse font-thin justify-between mt-2">
               <p className="text-sm text-[#030303] font-thin">{item.name}</p>

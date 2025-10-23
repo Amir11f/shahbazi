@@ -14,6 +14,8 @@ export { default as Vector } from "../public/icons/Vector";
 export { default as XIcon } from "../public/icons/xIcon";
 export { default as YouTubeIcon } from "../public/icons/youtubeIcon";
 export { default as SearchIcon } from "../public/icons/MinimalisticMagnifer";
+export { default as RunIcon } from "../public/icons/RunIcon";
+
 
 
 
