@@ -13,11 +13,11 @@ export default function ProductForm() {
         <div className="flex flex-row w-full gap-6 items-center justify-center ">
           <input
             type="text"
-            className=" h-12 bg-[#EFEFEF] rounded-lg w-full focus:outline-none focus:border-1 focus:border-golden  "
+            className=" h-12 bg-[#EFEFEF] rounded-lg w-full focus:outline-none focus:border-1 focus:border-golden  text-right pr-3 "
           />
           <input
             type="text"
-            className=" h-12 bg-[#EFEFEF] rounded-lg w-full focus:outline-none focus:border-1 focus:border-golden  "
+            className=" h-12 bg-[#EFEFEF] rounded-lg w-full focus:outline-none focus:border-1 focus:border-golden text-right pr-3  "
           />
         </div>
         <textarea

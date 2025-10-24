@@ -2,8 +2,8 @@ import Image from "next/image";
 
 export default function NewestVideos() {
   return (
-    <div className="flex flex-col items-center sm:w-full self-center font-cursive">
-      <div className="sm:flex sm:flex-row-reverse sm:justify-between sm:w-auto sm:gap-76 xl:w-auto xl:gap-[830px] xl:mb-8">
+    <div className="flex flex-col items-center sm:w-full self-center font-cursive relative -top-5 mb-30 sm:mb-45">
+      <div className="sm:flex sm:flex-row-reverse sm:justify-between sm:w-auto sm:gap-76 xl:w-auto xl:gap-[830px] xl:mb-8 sm:mb-10">
         <p className="text-2xl mb-8 sm:text-3xl xl:text-4xl font-thin">
           جدیدترین ویدیو ها
         </p>
@@ -17,7 +17,7 @@ export default function NewestVideos() {
           alt="null"
           width={108}
           height={36}
-          className="w-[360px] h-[160px] rounded-lg sm:w-[647px] sm:h-[286px] sm:rounded-2xl xl:w-[559px]"
+          className="w-[360px] h-[160px] rounded-lg sm:w-[647px] sm:h-[286px] sm:rounded-2xl xl:w-[559px] hover:scale-102"
         ></Image>
         <div className="flex flex-row gap-2.5 sm:gap-4.5">
           <Image
@@ -25,14 +25,14 @@ export default function NewestVideos() {
             alt="null"
             width={173}
             height={159}
-            className="w-[173px] h-[159px]rounded-lg sm:w-[311px] sm:h-[286px] sm:rounded-2xl"
+            className="w-[173px] h-[159px]rounded-lg sm:w-[311px] sm:h-[286px] sm:rounded-2xl hover:scale-102"
           ></Image>
           <Image
             src="/images/NewestVideo.png"
             alt="null"
             width={173}
             height={159}
-            className="w-[173px] h-[159px]rounded-lg sm:w-[311px] sm:h-[286px] sm:rounded-2xl"
+            className="w-[173px] h-[159px]rounded-lg sm:w-[311px] sm:h-[286px] sm:rounded-2xl hover:scale-102 transition duration-100"
           ></Image>
         </div>
       </div>
