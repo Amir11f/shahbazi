@@ -1,6 +1,4 @@
 import Image from "next/image";
-import React from "react";
-
 export default function MahziarIntroduction() {
   return (
     <div className="flex flex-col-reverse items-center sm:flex-col  xl:justify-around font-cursive xl:flex-col mb-40 sm:mb-20 xl:mb-0">
@@ -22,7 +20,7 @@ export default function MahziarIntroduction() {
                 <div className=" h-auto"></div>
                 <div className="flex flex-col text-right gap-1 sm:gap-2">
                   <p className="text-[8px] font-bold sm:text-lg">
-                    امنیت نوین مهزیار{" "}
+                    امنیت نوین مهزیار
                   </p>
                   <p className="text-[7px] font-thin sm:text-[15px]">
                     هایپر اینترنتی محصولات و خدمات امنیتی
