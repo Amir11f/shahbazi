@@ -49,11 +49,6 @@ function ProjectCard({ item }: { item: InstagramLike }) {
         loop
         playsInline
       ></video>
-
-      {/* <div className="absolute bottom-2 right-2 text-white drop-shadow-md">
-        <p className="text-sm font-semibold">{item.numberOfDone}</p>
-        <p className="text-[10px]">{item.projectName}</p>
-      </div> */}
     </div>
   );
 }
