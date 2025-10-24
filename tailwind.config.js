@@ -15,6 +15,19 @@ module.exports = {
       fontFamily: {
         cursive: 'var(--font-cursive)'
       },
+       keyframes: {
+        moveX: {
+          '0%, 100%': { transform: 'translateX(0)' },
+          '50%': { transform: 'translateX(30px)' }, // move 50px right
+        },
+          moveMX: {
+          '0%, 100%': { transform: 'translateX(0)' },
+          '50%': { transform: 'translateX(-30px)' }, // move 50px right
+        },
+      },
+      animation: {
+        moveX: 'moveX 3s ease-in-out infinite', // name duration easing repeat
+      },
     },
   },
   plugins: [],

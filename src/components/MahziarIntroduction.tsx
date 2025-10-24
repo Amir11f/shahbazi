@@ -15,8 +15,36 @@ export default function MahziarIntroduction() {
             استفاده از طراحان گرافیک است چاپگرها
           </p>
         </div>
-        <div>
-          <div className="flex flex-col">
+        <div className="flex flex-col items-center ">
+          <div className="flex flex-row-reverse">
+            <div className="w-[165px] h-[48px] border-1 border-[#F6F6F6] rounded-md relative z-30 top-25 flex  items-center justify-center bg-white right-5 animate-[moveX_5s_ease-in-out_infinite] sm:w-[300px] sm:h-[95px] sm:top-50 sm:right-22">
+              <div className="flex flex-row-reverse">
+                <div className=" h-auto"></div>
+                <div className="flex flex-col text-right gap-1 sm:gap-2">
+                  <p className="text-[8px] font-bold sm:text-lg">
+                    امنیت نوین مهزیار{" "}
+                  </p>
+                  <p className="text-[7px] font-thin sm:text-[15px]">
+                    هایپر اینترنتی محصولات و خدمات امنیتی
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div className="w-[190px] h-[48px]  border-1 border-[#F6F6F6] rounded-md relative z-30 top-60 bg-white flex  items-center justify-center animate-[moveMX_5s_ease-in-out_infinite] sm:w-100 sm:h-25 sm:top-130">
+              <div className="flex flex-row-reverse sm:gap-4.5">
+                <div className="w-5 h-5 bg-yellow-700 rounded-full sm:w-11 sm:h-11"></div>
+                <div className="flex flex-col text-right gap-1 sm:gap-2">
+                  <p className="text-[8px] font-bold sm:text-base">
+                    مهزیار شهبازی نژاد/ 1380
+                  </p>
+                  <p className="text-[7px] font-thin sm:text-sm">
+                    تکنسین، مشاور و مجری سیستم های نظارتی و شبکه
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="flex flex-col z-20">
             <Image
               src="/images/Model.jpg"
               alt="null"
@@ -34,7 +62,7 @@ export default function MahziarIntroduction() {
           </div>
         </div>
       </div>
-      <div className=" hidden sm:flex flex-col bg-black w-[99%] xl:w-[87%] h-[135px] mb-20 rounded-xl text-white items-center justify-center gap-y-5 xl:flex-row sm:mb-0 sm:relative sm:-top-10 ">
+      <div className=" hidden sm:flex flex-col bg-black w-[99%] xl:w-[87%] h-[135px] mb-20 rounded-xl text-white items-center justify-center gap-y-5 xl:flex-row sm`:mb-0 sm:relative sm:-top-10 ">
         <div className="flex flex-row gap-5 text-base font-thin">
           <p>پروژه نصب دوربین مدار بسته</p>
           <hr className="text-[#424242] w-7 h-[1px] rotate-90 relative -bottom-3" />

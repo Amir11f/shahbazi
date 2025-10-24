@@ -80,6 +80,7 @@ export default function ProductComponet({ slug }: { slug: number }) {
 
                 checked:after:border-black checked:after:border-b-1 checked:after:border-r-1 sm:checked:after:border-b-2 sm:checked:after:border-r-2
                 checked:after:rotate-45
+                text-right pr-3 
               "
               />
             </div>
@@ -102,6 +103,7 @@ export default function ProductComponet({ slug }: { slug: number }) {
 
                 checked:after:border-black checked:after:border-b-1 checked:after:border-r-1 sm:checked:after:border-b-2 sm:checked:after:border-r-2
                 checked:after:rotate-45
+                text-right pr-3 
               "
               />{" "}
             </div>

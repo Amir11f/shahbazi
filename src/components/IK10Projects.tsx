@@ -188,7 +188,7 @@ export default function VerticalHighlightScroll({
         <div className="flex justify-center items-center relative -top-15">
           <div
             ref={containerRef}
-            className="h-[300px] w-[350px] overflow-y-auto scroll-smooth snap-y relative left-5 snap-mandatory rounded-2xl bg-[#ffffff] py-2 select-none cursor-grab [&::-webkit-scrollbar]:hidden sm:w-auto sm:h-[500px] sm:relative sm:-top-15 xl:-top-0"
+            className="h-[300px] w-full overflow-y-auto scroll-smooth snap-y left-5 snap-mandatory rounded-2xl bg-[#ffffff] py-2 select-none cursor-grab [&::-webkit-scrollbar]:hidden sm:w-auto sm:h-[500px] sm:relative sm:-top-15 xl:-top-0"
           >
             <div className="h-[130px] flex-shrink-0" />
             {Array.isArray(items) && items.length > 0 ? (
