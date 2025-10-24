@@ -4,7 +4,6 @@ import React, { useEffect, useRef, useState } from "react";
 import { motion } from "framer-motion";
 import WaveSurfer from "wavesurfer.js";
 import { RunIcon } from "@/index";
-import { div } from "framer-motion/client";
 
 export interface ScrollItem {
   // title: string;
