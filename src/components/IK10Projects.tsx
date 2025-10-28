@@ -6,8 +6,8 @@ import WaveSurfer from "wavesurfer.js";
 import { RunIcon } from "@/index";
 
 export interface ScrollItem {
-  // title: string;
-  // subtitle?: string;
+  title: string;
+  subtitle?: string;
   audioUrl: string;
 }
 
@@ -101,31 +101,26 @@ export default function VerticalHighlightScroll({
 
   /* ─────────── WaveSurfer setup (custom render) ─────────── */
   useEffect(() => {
+    const localRefs = [...wavesurferRefs.current]; // ✅ snapshot
+
     items.forEach((item, i) => {
       const container = document.getElementById(`waveform-${i}`);
-      if (!container || wavesurferRefs.current[i]) return;
+      if (!container || localRefs[i]) return;
 
-      // Get screen width
       const screenWidth = window.innerWidth;
-
-      // Set default values
       let height = 32;
       let barWidth = 2;
       let barGap = 4;
 
-      // Adjust values with if statements
       if (screenWidth < 640) {
-        // mobile
         height = 32;
         barWidth = 1;
         barGap = 3;
       } else if (screenWidth >= 640 && screenWidth < 1024) {
-        // tablet
         height = 52;
         barWidth = 1;
         barGap = 4;
       } else {
-        // desktop
         height = 63;
         barWidth = 2;
         barGap = 5;
@@ -140,16 +135,17 @@ export default function VerticalHighlightScroll({
         barWidth,
         barGap,
         barRadius: 1,
-        // responsive: true,
         normalize: true,
       });
 
       ws.load(item.audioUrl);
-      wavesurferRefs.current[i] = ws;
+      localRefs[i] = ws;
     });
 
+    wavesurferRefs.current = localRefs; // ✅ update ref
+
     return () => {
-      wavesurferRefs.current.forEach((ws) => ws?.destroy());
+      localRefs.forEach((ws) => ws?.destroy());
     };
   }, [items]);
 
