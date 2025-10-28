@@ -3,9 +3,9 @@ import { items } from "../data/mostSellingItems";
 
 export default function MostSellingItems() {
   return (
-    <div className="flex flex-col items-center sm:w-full self-center font-cursive relative -top-60 sm:-top-95 xl:-top-65">
-      <div className="sm:flex sm:flex-row-reverse sm:justify-between sm:w-auto sm:gap-70 xl:gap-[760px] xl:mb-8 sm:mb-17 xl:w-auto ">
-        <p className="text-2xl mb-12 sm:text-3xl text-[#000000] xl:text-4xl font-thin ">
+    <div className="flex flex-col items-center sm:w-full self-center font-cursive relative -top-60 sm:-top-100 xl:-top-70  ">
+      <div className="sm:flex sm:flex-row-reverse sm:justify-between sm:w-auto sm:gap-70 xl:gap-[760px] xl:mb-18 sm:mb-17 xl:w-auto  ">
+        <p className="text-2xl mb-12 sm:mb-0 sm:text-3xl text-[#000000] xl:text-4xl font-thin flex self-center ">
           پرفروشترین ها
         </p>
         <button className=" hidden sm:block w-[187px] h-12 bg-[#133B3224] transition duration-100 hover:bg-[#a7a7a7] sm:text-xl text-[#151517] rounded-lg xl:w-[256px] xl:h-14 font-normal">
