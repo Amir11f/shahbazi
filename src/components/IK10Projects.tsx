@@ -6,8 +6,8 @@ import WaveSurfer from "wavesurfer.js";
 import { RunIcon } from "@/index";
 
 export interface ScrollItem {
-  // title: string;
-  // subtitle?: string;
+  title: string;
+  subtitle?: string;
   audioUrl: string;
 }
 
@@ -140,7 +140,7 @@ export default function VerticalHighlightScroll({
         barWidth,
         barGap,
         barRadius: 1,
-        responsive: true,
+        // responsive: true,
         normalize: true,
       });
 
@@ -214,10 +214,10 @@ export default function VerticalHighlightScroll({
                   >
                     <div className="flex flex-col">
                       <div className="text-[1.1rem] font-semibold text-black">
-                        {item.title}
+                        {/* {item.title} */}
                       </div>
                       <div className="text-[0.85rem] opacity-80 mb-2 text-black">
-                        {item.subtitle}
+                        {/* {item.subtitle} */}
                       </div>
                       <div
                         id={`waveform-${index}`}

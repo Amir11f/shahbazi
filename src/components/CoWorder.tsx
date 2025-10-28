@@ -49,7 +49,7 @@ export default function AutoWidthSwiper() {
           "K",
         ].map((item) => (
           <SwiperSlide
-            key={item}
+            key={crypto.randomUUID()}
             className="!w-[136px] h-[34px] bg-gray-800 text-white text-xl "
           >
             <Image
