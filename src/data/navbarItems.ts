@@ -12,7 +12,7 @@ const navbarItems : NavbarItems[] = [
     { id: 4, title: "بلاگ", link: "/services" },
     { id: 3, title: " بیوگرافی", link: "/portfolio" },
     { id: 2, title: " خدمات", link: "/about" },
-  { id: 1, title: "محصولات", link: "/" },
+  { id: 1, title: "محصولات", link: "/products" },
 ];
 
 export default navbarItems;
