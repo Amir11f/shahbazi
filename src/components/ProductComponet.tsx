@@ -24,7 +24,8 @@ export default function ProductComponet({ slug }: { slug: number }) {
           <div className="flex flex-row gap-2 w-full items-start justify-center mt-3 sm:gap-4 sm:mt-10">
             {findData?.color?.map((item: any) => (
               <div
-                className={`bg-golden w-[75px] h-[77px] rounded-[5px] sm:w-[120px] sm:h-[120px] sm:rounded-lg`}
+                key={crypto.randomUUID()}
+                className={`bg-golden w-[75px] h-[77px] rounded-[5px] sm:w-[120px] sm:h-[120px] sm:rounded-lg mt-20 sm:mt-25 xl:mt-50`}
               ></div>
             ))}
           </div>
@@ -37,11 +38,13 @@ export default function ProductComponet({ slug }: { slug: number }) {
             <p className="text-base font-bold mt-1.5 sm:text-[32px]">
               دوربین شماره 12
             </p>
-            <Vector className=" hidden xl:flex w-8.5 h-8.5 relative top-1 " />
           </div>
           <div className="flex flex-row gap-6 mt-5 sm:flex-col sm:gap-2 font-normal sm:mt-8 text-[#030303]">
             {findData?.material.map((item) => (
-              <div className="text-[11px] sm:text-xl "> {item} : بدنه </div>
+              <div className="text-[11px] sm:text-xl " key={item}>
+                {" "}
+                {item} : بدنه{" "}
+              </div>
             ))}
           </div>
           <p className="text-[11px] mt-4 sm:text-xl sm:mb-3 sm:mt-10">رنگ</p>
@@ -49,6 +52,7 @@ export default function ProductComponet({ slug }: { slug: number }) {
             {findData?.color.map((item) => (
               <div
                 className={`bg-golden w-[25px] h-[25px] rounded-[5px] sm:h-12 sm:w-12 xl:rounded-md`}
+                key={crypto.randomUUID()}
               ></div>
             ))}
           </div>
@@ -66,7 +70,7 @@ export default function ProductComponet({ slug }: { slug: number }) {
             </p>
             <hr className="relative bottom-3 sm:bottom-5" />
           </div>
-          <div className="flex flex-row-reverse w-full justify-between mt-6 gap-6 text-[10px] sm:text-xl sm:mb-4">
+          <div className="flex flex-row-reverse w-full justify-between mt-6 gap-6 text-[10px] sm:text-xl sm:mb-4 mb-1">
             <div className="flex flex-row">
               <p>بهمراه نصب محصول</p>
               <input
