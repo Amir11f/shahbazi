@@ -22,7 +22,8 @@ export default function ProductComponet({ slug }: { slug: number }) {
             />
           )}
           <div className="flex flex-row gap-2 w-full items-start justify-center mt-3 sm:gap-4 sm:mt-10">
-            {findData?.color?.map((item: any) => (
+            {findData?.color?.map(() => (
+              // item: any
               <div
                 key={crypto.randomUUID()}
                 className={`bg-golden w-[75px] h-[77px] rounded-[5px] sm:w-[120px] sm:h-[120px] sm:rounded-lg mt-20 sm:mt-25 xl:mt-50`}
@@ -42,8 +43,7 @@ export default function ProductComponet({ slug }: { slug: number }) {
           <div className="flex flex-row gap-6 mt-5 sm:flex-col sm:gap-2 font-normal sm:mt-8 text-[#030303]">
             {findData?.material.map((item) => (
               <div className="text-[11px] sm:text-xl " key={item}>
-                {" "}
-                {item} : بدنه{" "}
+                {item} : بدنه
               </div>
             ))}
           </div>
@@ -109,7 +109,7 @@ export default function ProductComponet({ slug }: { slug: number }) {
                 checked:after:rotate-45
                 text-right pr-3 
               "
-              />{" "}
+              />
             </div>
             <div className="flex flex-row-reverse gap-0.5 sm:gap-1.5">
               <p>10,000,000 </p>

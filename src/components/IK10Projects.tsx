@@ -101,31 +101,26 @@ export default function VerticalHighlightScroll({
 
   /* ─────────── WaveSurfer setup (custom render) ─────────── */
   useEffect(() => {
+    const localRefs = [...wavesurferRefs.current]; // ✅ snapshot to local variable
+
     items.forEach((item, i) => {
       const container = document.getElementById(`waveform-${i}`);
-      if (!container || wavesurferRefs.current[i]) return;
+      if (!container || localRefs[i]) return;
 
-      // Get screen width
       const screenWidth = window.innerWidth;
-
-      // Set default values
       let height = 32;
       let barWidth = 2;
       let barGap = 4;
 
-      // Adjust values with if statements
       if (screenWidth < 640) {
-        // mobile
         height = 32;
         barWidth = 1;
         barGap = 3;
       } else if (screenWidth >= 640 && screenWidth < 1024) {
-        // tablet
         height = 52;
         barWidth = 1;
         barGap = 4;
       } else {
-        // desktop
         height = 63;
         barWidth = 2;
         barGap = 5;
@@ -145,11 +140,13 @@ export default function VerticalHighlightScroll({
       });
 
       ws.load(item.audioUrl);
-      wavesurferRefs.current[i] = ws;
+      localRefs[i] = ws;
     });
 
+    wavesurferRefs.current = localRefs;
+
     return () => {
-      wavesurferRefs.current.forEach((ws) => ws?.destroy());
+      localRefs.forEach((ws) => ws?.destroy()); // ✅ cleanup uses snapshot
     };
   }, [items]);
 
@@ -208,7 +205,7 @@ export default function VerticalHighlightScroll({
 
                 return (
                   <motion.div
-                    key={index}
+                    key={crypto.randomUUID()}
                     className="vhs-item h-[73px] w-[320px] my-5 rounded-md bg-[#F6F6F6] flex items-center justify-between px-4 box-border snap-center text-white transform transition-all duration-200 ease-in-out sm:w-[493px] sm:h-[113px] sm:rounded-xl xl:w-[562px] xl:h-[129px]"
                     style={{ scale, opacity, zIndex: isActive ? 2 : 1 }}
                   >
