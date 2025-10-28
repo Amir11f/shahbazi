@@ -140,7 +140,7 @@ export default function VerticalHighlightScroll({
         barWidth,
         barGap,
         barRadius: 1,
-        responsive: true,
+        // responsive: true,
         normalize: true,
       });
 
@@ -208,16 +208,16 @@ export default function VerticalHighlightScroll({
 
                 return (
                   <motion.div
-                    key={index}
+                    key={crypto.randomUUID()}
                     className="vhs-item h-[73px] w-[320px] my-5 rounded-md bg-[#F6F6F6] flex items-center justify-between px-4 box-border snap-center text-white transform transition-all duration-200 ease-in-out sm:w-[493px] sm:h-[113px] sm:rounded-xl xl:w-[562px] xl:h-[129px]"
                     style={{ scale, opacity, zIndex: isActive ? 2 : 1 }}
                   >
                     <div className="flex flex-col">
                       <div className="text-[1.1rem] font-semibold text-black">
-                        {item.title}
+                        {/* {item.title} */}
                       </div>
                       <div className="text-[0.85rem] opacity-80 mb-2 text-black">
-                        {item.subtitle}
+                        {/* {item.subtitle} */}
                       </div>
                       <div
                         id={`waveform-${index}`}
