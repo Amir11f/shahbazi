@@ -101,7 +101,7 @@ export default function VerticalHighlightScroll({
 
   /* ─────────── WaveSurfer setup (custom render) ─────────── */
   useEffect(() => {
-    const localRefs = [...wavesurferRefs.current]; // ✅ snapshot
+    const localRefs = [...wavesurferRefs.current]; // ✅ snapshot to local variable
 
     items.forEach((item, i) => {
       const container = document.getElementById(`waveform-${i}`);
@@ -142,10 +142,10 @@ export default function VerticalHighlightScroll({
       localRefs[i] = ws;
     });
 
-    wavesurferRefs.current = localRefs; // ✅ update ref
+    wavesurferRefs.current = localRefs;
 
     return () => {
-      localRefs.forEach((ws) => ws?.destroy());
+      localRefs.forEach((ws) => ws?.destroy()); // ✅ cleanup uses snapshot
     };
   }, [items]);
 
