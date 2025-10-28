@@ -1,10 +1,11 @@
 import Image from "next/image";
 import React from "react";
 import { popularServices } from "@/data/mostPopularServices";
+import { AddCircle } from "../index";
 
 export default function ProductBlackBox() {
   return (
-    <div className=" flex flex-col items-center font-cursive">
+    <div className=" flex flex-col items-center font-cursive mt-10 sm:mt-15 xl:mt-23">
       <Image
         src="/images/SmallProductBlackBox.svg"
         alt="null"
@@ -38,16 +39,22 @@ export default function ProductBlackBox() {
         {popularServices?.map((item) => (
           <div
             key={item.id}
-            className="flex flex-col items-center w-[237px] h-[175px] rounded-[40px] bg-white border-[1px] border-[#ECECEC] sm:w-[171px] sm:h-[175px] sm:gap-3 justify-center xl:w-[199px] xl:h-[180px]"
+            className="flex flex-col items-center w-[237px] h-auto rounded-[40px] bg-white border-[1px] border-[#ECECEC] sm:w-[171px] sm:h-auto sm:gap-3 justify-center xl:w-[199px] xl:h-auto"
           >
             <Image
               src={item.image}
               alt="null"
               width={155}
               height={114}
-              className="sm:w-[109px] h-[109px]"
+              className="sm:w-[109px] h-[109px] mt-5 sm:mt-4"
             />
-            <p className="text-[17px]"> {item.service}</p>
+            <div className="flex flex-col items-center">
+              <p className="text-[17px]  mt-3 sm:mt-1 mb-3 "> {item.service}</p>
+              <div className="w-[169px] h-[35px] bg-[#151517] hidden hover:flex flex-row-reverse items-center justify-center rounded-lg gap-2.5  sm:w-[104px] xl:w-[130px] mb-2">
+                <p className="text-sm text-white">افزودن </p>
+                <AddCircle className="text-white w-4.5 h-4.5" />
+              </div>
+            </div>
           </div>
         ))}
       </div>

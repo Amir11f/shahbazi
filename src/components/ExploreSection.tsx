@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function ExploreSection() {
   return (
-    <div className="flex flex-row-reverse justify-center xl:justify-around ">
+    <div className="flex flex-row-reverse justify-center xl:justify-around mt-30 xl:mt-50 ">
       <div className="flex flex-col items-center font-cursive self-center">
         <Image
           src="images/explore.svg"
