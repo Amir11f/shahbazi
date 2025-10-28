@@ -135,6 +135,7 @@ export default function VerticalHighlightScroll({
         barWidth,
         barGap,
         barRadius: 1,
+        // responsive: true,
         normalize: true,
       });
 
