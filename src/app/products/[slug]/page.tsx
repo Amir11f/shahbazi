@@ -19,7 +19,9 @@ export default async function Page({ params }: { params: { slug: number } }) {
       <ProductComponet slug={slug} />
       <KnowAboutHikVision />
       <ProductBlackBox />
-      <MostSellingItems />
+      <div className="relative -top-53 sm:top-80">
+        <MostSellingItems />
+      </div>
       <div className="flex flex-col sm:flex-col-reverse">
         <ProductForm />
         <ProductUserOpinion />

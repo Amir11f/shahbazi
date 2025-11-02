@@ -169,7 +169,7 @@ export default function VerticalHighlightScroll({
         <p className="text-3xl font-bold sm:text-[48px] text-center xl:text-end">
           <span className="text-golden text-[28px] sm:text-[44px] mx-1">
             IK10
-          </span>{" "}
+          </span>
           پروژه های
         </p>
         <p className="font-base  font-thin w-[333px] tracking-[30px] sm:text-lg sm:w-[431px] text-center xl:text-end">
