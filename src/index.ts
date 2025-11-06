@@ -15,7 +15,8 @@ export { default as XIcon } from "../public/icons/xIcon";
 export { default as YouTubeIcon } from "../public/icons/youtubeIcon";
 export { default as SearchIcon } from "../public/icons/MinimalisticMagnifer";
 export { default as RunIcon } from "../public/icons/RunIcon";
-
-
+export { default as Clapperboard } from "../public/icons/Clapperboard";
+export { default as Letter } from "../public/icons/Letter";
+export { default as PhoneIcon } from "../public/icons/PhoneCalling";
 
 
