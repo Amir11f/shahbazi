@@ -12,10 +12,10 @@ export default function CounsellingForm() {
         سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای
         متنوع با هدف بهبود ابزارهای کاربردی می باشد
       </p>
-      <div className="flex flex-col xl:flex-row-reverse w-full bg-[#F6F6F6] justify-center items-center xl:w-290 xl:rounded-4xl">
+      <div className="flex flex-col rounded-3xl xl:flex-row-reverse w-full bg-[#F6F6F6] justify-center items-center xl:w-290 xl:rounded-4xl">
         <form
           action=""
-          className="bg-[#F6F6F6] rounded-3xl w-full flex flex-col items-center justify-center gap-4 py-9 sm:py-[68px] sm:gap-6 xl:w-[50%] xl:py-9 relative left-10 "
+          className="bg-[#F6F6F6] rounded-3xl w-full flex flex-col items-center justify-center gap-4 py-9 sm:py-[68px] sm:gap-6 xl:w-[50%] xl:py-9 xl:relative xl:left-10 "
         >
           <input
             type="text"
@@ -94,7 +94,7 @@ export default function CounsellingForm() {
             پرداخت
           </div>
         </form>
-        <div className="w-[518px] h-[732px] relative bottom-1 rounded-[5px] border-[1px] border-golden flex flex-col items-center left-5">
+        <div className="w-[518px] h-[732px] relative bottom-1 rounded-[5px] border-[1px] border-golden hidden xl:flex flex-col items-center left-5">
           <p className="text-[32px] mt-[105px] mb-2 font-bold ">جلسه مشاوره</p>
           <p className="text-sm font-thin">هر جلسه n تایم</p>
 
