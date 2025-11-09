@@ -33,12 +33,12 @@ export default function CounselingIntroduction() {
         </div>
       </div>
       <div className="xl:mt-20">
-        <Image
-          src="/images/counseling.svg"
+        <img
+          src="/images/CounselingPng.png"
           alt="null"
-          width={300}
-          height={100}
-          className="w-full xl:w-[200rem] "
+          width={900}
+          height={330}
+          className="w-auto h-[166px] object-cover sm:h-[329px] xl:"
         />
       </div>
     </div>
