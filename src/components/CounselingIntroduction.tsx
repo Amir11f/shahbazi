@@ -38,7 +38,7 @@ export default function CounselingIntroduction() {
           alt="null"
           width={900}
           height={330}
-          className="w-auto h-[166px] object-cover sm:h-[329px] xl:"
+          className="w-auto h-[166px] object-cover sm:h-[329px] xl:w-800"
         />
       </div>
     </div>
