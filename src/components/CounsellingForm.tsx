@@ -5,13 +5,15 @@ import PhoneIcon from "../../public/icons/PhoneCalling";
 export default function CounsellingForm() {
   return (
     <div className="flex items-center flex-col font-cursive ">
-      <p className="text-2xl font-bold mb-5 sm:text-[40px]">مشاور دهی</p>
-      <p className="text-sm font-thin w-[311px] text-center mb-14 sm:w-[680px] sm:text-base xl:w-300">
+      <p className="text-2xl font-bold sm:text-[40px] text-golden mb-15">
+        در خواست جلسه مشاوره
+      </p>
+      {/* <p className="text-sm font-thin w-[311px] text-center mb-14 sm:w-[680px] sm:text-base xl:w-300">
         لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده
         از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و
         سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای
         متنوع با هدف بهبود ابزارهای کاربردی می باشد
-      </p>
+      </p> */}
       <div className="flex flex-col rounded-3xl xl:flex-row-reverse w-full bg-[#F6F6F6] justify-center items-center xl:w-290 xl:rounded-4xl">
         <form
           action=""
@@ -25,12 +27,27 @@ export default function CounsellingForm() {
           <input
             type="text"
             className="w-[90%] h-[54px] bg-white rounded-lg  focus:outline-none focus:border-2 focus:border-golden text-end text-xs pr-5 sm:w-[476px] sm:h-[54px] sm:text-base"
-            placeholder="نام شرکت"
+            placeholder="نام مجموعه"
           />
           <input
             type="text"
             className="w-[90%] h-[54px] bg-white rounded-lg  focus:outline-none focus:border-2 focus:border-golden text-end text-xs pr-5 sm:w-[476px] sm:h-[54px] sm:text-base"
-            placeholder=" شماره تماس"
+            placeholder=" زمینه فعالیت"
+          />
+          <input
+            type="text"
+            className="w-[90%] h-[54px] bg-white rounded-lg  focus:outline-none focus:border-2 focus:border-golden text-end text-xs pr-5 sm:w-[476px] sm:h-[54px] sm:text-base"
+            placeholder=" سابقه فعالیت"
+          />
+          <input
+            type="text"
+            className="w-[90%] h-[54px] bg-white rounded-lg  focus:outline-none focus:border-2 focus:border-golden text-end text-xs pr-5 sm:w-[476px] sm:h-[54px] sm:text-base"
+            placeholder="شهر محل فعالیت"
+          />
+          <input
+            type="text"
+            className="w-[90%] h-[54px] bg-white rounded-lg  focus:outline-none focus:border-2 focus:border-golden text-end text-xs pr-5 sm:w-[476px] sm:h-[54px] sm:text-base"
+            placeholder="شماره موبایل"
           />
           <input
             type="text"
@@ -94,20 +111,32 @@ export default function CounsellingForm() {
             پرداخت
           </div>
         </form>
-        <div className="w-[518px] h-[732px] relative bottom-1 rounded-[5px] border-[1px] border-golden hidden xl:flex flex-col items-center left-5">
-          <p className="text-[32px] mt-[105px] mb-2 font-bold ">جلسه مشاوره</p>
-          <p className="text-sm font-thin">هر جلسه n تایم</p>
+        <div className="w-[518px] h-[892px] relative rounded-[5px] border-[1px] border-golden hidden xl:flex flex-col items-center left-5 bottom-10">
+          <p className="text-[32px] mt-[35px] mb-2 font-bold ">جلسه مشاوره</p>
+          <p className="text-sm font-thin">هر جلسه 60 دقیقه</p>
 
           <ul
             className="list-disc text-start gap-3 flex flex-col relative right-7 mt-12"
             dir="rtl"
           >
+            <li className="text-base font-thin">بصورت حضوری و آنلاین </li>
+            <hr className="w-[366px] relative left-7 h-[2px] bg-white text-white" />
+            <li className="text-base font-thin">پشتیبانی جلسه </li>
+            <hr className="w-[366px] relative left-7 h-[2px] bg-white text-white" />
+            <li className="text-base font-thin">حضور حداکثر 3 نفر در جلسه </li>
+            <hr className="w-[366px] relative left-7 h-[2px] bg-white text-white" />
+            <li className="text-base font-thin">بصورت حضوری و آنلاین </li>
+            <hr className="w-[366px] relative left-7 h-[2px] bg-white text-white" />
             <li className="text-base font-thin">
-              لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از
+              رصد روند اجرایی ایده‌های خروجی جلسه
             </li>
             <hr className="w-[366px] relative left-7 h-[2px] bg-white text-white" />
             <li className="text-base font-thin">
-              لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از
+              دریافت اطلاعات مورد نیاز جهت بررسی و ارزیابی
+            </li>
+            <hr className="w-[366px] relative left-7 h-[2px] bg-white text-white" />
+            <li className="text-base font-thin">
+              رفع ابهام شما در سطوح مختلف ارتباطی،پایشی و پایداری شبکه
             </li>
             <hr className="w-[366px] relative left-7 h-[2px] bg-white text-white" />
             <li className="text-base font-thin">
