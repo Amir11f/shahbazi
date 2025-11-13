@@ -9,29 +9,31 @@ interface Items {
 
 export const items:Items[] = [
     {
-        name:'دوربین مدار بسته',
-        id:1,
-        price:398040,
-        priceWithDiscount:93903940,
-        photo:'../../public/icons/IMG_20250912_133808_371.svg'
-    },
-        {
-        name:'دوربین مدار بسته',
-        id:2,
-        price:398040,
-        priceWithDiscount:93903940,
-        photo:'../../public/icons/IMG_20250912_133808_371.svg'
-    },    {
-        name:'دوربین مدار بسته',
-        id:3,
-        price:398040,
-        priceWithDiscount:93903940,
-        photo:'../../public/icons/IMG_20250912_133808_371.svg'
-    },    {
-        name:'دوربین مدار بسته',
+        name:'DS-2CD2743G2-IZS',
         id:4,
         price:398040,
         priceWithDiscount:93903940,
-        photo:'../../public/icons/IMG_20250912_133808_371.svg'
+        photo:'/productImages/Rectangle75.png'
+    },
+    {
+        name:'DS-2CD2T46G2-2I/4I',
+        id:3,
+        price:398040,
+        priceWithDiscount:93903940,
+        photo:'/productImages/Rectangle74.png'
+    }, 
+    {
+    name:'DS-2CD1027G2H-LIU(F)',
+    id:2,
+    price:398040,
+    priceWithDiscount:93903940,
+    photo:'/productImages/Rectangle73.png'
+},       
+    {
+        name:'کیتip چهار دوربینه 4مگاپیکسل ',
+        id:1,
+        price:398040,
+        priceWithDiscount:93903940,
+        photo:'/productImages/Rectangle72.png'
     },
 ]

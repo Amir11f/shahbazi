@@ -18,5 +18,19 @@ export { default as RunIcon } from "../public/icons/RunIcon";
 export { default as Clapperboard } from "../public/icons/Clapperboard";
 export { default as Letter } from "../public/icons/Letter";
 export { default as PhoneIcon } from "../public/icons/PhoneCalling";
+export { default as CPUBolt } from "../public/icons/CPUBolt";
+export { default as Setting } from "../public/icons/Settings";
+export { default as SirenRounded } from "../public/icons/SirenRounded";
+export { default as TelegramIcon } from "../public/icons/TelegramIcons";
+export { default as ToolsIcon } from "../public/icons/ToolsIcon";
+export { default as WhatsAppIcons } from "../public/icons/WhatsAppIcons";
+export { default as HouseIcon } from "../public/icons/HouseIcon";
+export { default as CameraIcon } from "../public/icons/CameraIcon";
+export { default as NavbarMahziarLogo } from "../public/icons/NavbarMahziarLogo";
+export { default as CameraIconS } from "../public/icons/CameraIconS";
+
+
+
+
 
 

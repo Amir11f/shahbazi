@@ -1,16 +1,21 @@
 import Image from "next/image";
+import { CameraIcon, CameraIconS, HouseIcon, Setting } from "..";
 export default function MahziarIntroduction() {
   return (
-    <div className="flex flex-col-reverse items-center sm:flex-col  xl:justify-around font-cursive xl:flex-col mb-40 sm:mb-20 xl:mb-0">
+    <div className="flex flex-col items-center sm:flex-col xl:justify-around font-cursive xl:flex-col mb-40 sm:mb-20 xl:mb-0">
       <div className="flex flex-col-reverse items-center sm:flex-col xl:flex-row-reverse xl:justify-around font-cursive ">
         <div className="flex flex-col items-center text-center mx-3 sm:w-[70%] xl:w-[30%]">
-          <p className="text-[28px] font-bold mb-3 sm:text-[48px]">
-            <span className="text-golden ">مهزیار شهبازی نژاد</span> مدرس و
-            مشاور سیستم های امنیتی
+          <p className=" text-[18px] font-bold mb-3 sm:text-[28px]">
+            <span className="text-golden text-[28px] sm:text-[48px]">
+              مهزیار شهبازی نژاد
+            </span>
+            <br />
+            طراح ،‌‌‌ مشاور و مجری سیستم‌‌های نظارتی وشبکه
           </p>
           <p className="text-xs/6 text-[#262626] font-thin mx-2 sm:text-lg/9 ">
-            لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
-            استفاده از طراحان گرافیک است چاپگرها
+            تیم تخصصی اجرا و راه اندازی تجهیزات برند هایک‌‌‌ویژن سبد محصولاتی از
+            برترین برند های جهانی ارئه سرویس و خدمات امنیتی نظارتی و شبکه7روز
+            هفته مشاوره و طراحی تخصصی در حیطه شبکه و سرور
           </p>
         </div>
         <div className="flex flex-col items-center ">
@@ -60,22 +65,47 @@ export default function MahziarIntroduction() {
           </div>
         </div>
       </div>
-      <div className=" hidden sm:flex flex-col bg-black w-[99%] xl:w-[87%] h-[135px] mb-20 rounded-xl text-white items-center justify-center gap-y-5 xl:flex-row sm`:mb-0 sm:relative sm:-top-10 ">
-        <div className="flex flex-row gap-5 text-base font-thin">
-          <p>پروژه نصب دوربین مدار بسته</p>
-          <hr className="text-[#424242] w-7 h-[1px] rotate-90 relative -bottom-3" />
-          <p>فروشگاه</p>
-          <hr className="text-[#424242] w-7 h-[1px] rotate-90 relative -bottom-3" />
-          <p>پروژه نصب دزدگیر اماکن</p>
+      <div className=" flex flex-col bg-black w-[99%] xl:w-[87%] h-[219px] mb-20 rounded-xl text-white items-center justify-center gap-y-5 xl:flex-row relative top-20 sm:-top-10 ">
+        <div className="flex flex-row-reverse gap-2 sm:gap-9 xl:gap-0 text-base font-thin">
+          <div className="flex flex-col items-center gap-4 justify-center cursor-pointer hover:text-golden hover:scale-105">
+            <CameraIconS className="w-8 h-7 sm:w-10 sm:h-9 text-white" />
+            <p className="text-[11px] sm:text-[15px] xl:text-lg">
+              پروژه نصب دوربین مدار بسته
+            </p>
+          </div>
+          <hr className="text-[#424242] w-10 xl:w-18 sm:w-15 sm:top-9 h-[1px] rotate-90 relative -bottom-6" />
+          <div className="flex flex-col items-center gap-4 justify-center cursor-pointer hover:text-golden hover:scale-105">
+            <HouseIcon className="w-8 h-7 sm:w-10 sm:h-9" />
+            <p className="text-[11px] sm:text-[15px] xl:text-lg">فروشگاه</p>
+          </div>
+          <hr className="text-[#424242] w-10 xl:w-18 sm:w-15 sm:top-9 h-[1px] rotate-90 relative -bottom-6" />
+          <div className="flex flex-col items-center gap-4 justify-center cursor-pointer hover:text-golden hover:scale-105">
+            <HouseIcon className="w-8 h-7 sm:w-10 sm:h-9" />
+            <p className="text-[11px] sm:text-[15px] xl:text-lg">
+              پروژه نصب دزدگیر اماکن
+            </p>
+          </div>
         </div>
-        <div className="flex flex-row gap-5 text-base font-thin">
-          <p>رفع ایراد و عیب یابی</p>
-          <hr className="text-[#424242] w-7 h-[1px] rotate-90 relative -bottom-3" />
-
-          <p>هایکست</p>
-          <hr className="text-[#424242] w-7 h-[1px] rotate-90 relative -bottom-3" />
-
-          <p>پروژه دیتا سرور و VIOP</p>
+        <hr className="text-[#424242] hidden xl:flex w-10 xl:w-18 sm:w-15 sm:top-9 h-[1px] rotate-90 relative xl:-top-4" />
+        <div className="flex flex-row-reverse gap-2 sm:gap-9 xl:gap-0 text-base font-thin">
+          <div className="flex flex-col items-center gap-4 justify-center cursor-pointer hover:text-golden hover:scale-105">
+            <Setting className="w-8 h-7 sm:w-10 sm:h-9" />
+            <p className="text-[11px] sm:text-[15px] xl:text-lg">
+              رفع ایراد و عیب یابی
+            </p>
+          </div>
+          <hr className="text-[#424242] w-10 xl:w-18 sm:w-15 sm:top-9 h-[1px] rotate-90 relative -bottom-6" />
+          <div className="flex flex-col items-center gap-4 justify-center cursor-pointer hover:text-golden hover:scale-105">
+            <HouseIcon className="w-8 h-7 sm:w-10 sm:h-9" />
+            <p className="text-[11px] sm:text-[15px] xl:text-lg">هایکست</p>
+          </div>
+          <hr className="text-[#424242] w-10 xl:w-18 sm:w-15 sm:top-9 h-[1px] rotate-90 relative -bottom-6" />
+          <div className="flex flex-col items-center gap-4 justify-center cursor-pointer hover:text-golden hover:scale-105">
+            <HouseIcon className="w-8 h-7 sm:w-10 sm:h-9" />
+            <p className="text-[11px] sm:text-[15px] xl:text-lg">
+              پروژه دیتا سرور و VIOP
+            </p>
+          </div>
         </div>
       </div>
     </div>

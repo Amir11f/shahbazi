@@ -5,12 +5,13 @@ export default function CounselingIntroduction() {
       <div className="flex flex-col  items-center sm:flex-col gap-y-6 xl:flex-row xl:justify-around font-cursive ">
         <div className="flex flex-col items-center text-center mx-3 sm:w-[70%] xl:w-[30%]">
           <p className="text-[28px] font-bold mb-3 sm:text-[48px]">
-            <span className="">مهزیار شهبازی نژاد</span> مدرس و مشاور سیستم های
-            امنیتی
+            <span className="text-golden"> مهزیار شهبازی نژاد</span>, طراح مشاور
+            و مجری سیستم‌های نظارتی و شبکه
           </p>
           <p className="text-xs/6 text-[#262626] font-thin mx-2 sm:text-lg/9 ">
-            لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
-            استفاده از طراحان گرافیک است چاپگرها
+            تیم تخصصی اجرا و راه‌اندازی تجهیزات برند هایک ویژن سبد محصولاتی از
+            برترین برندهای جهانی ارائه سرویس و خدمات امنیتی،نظارتی و شبکه 7روز
+            هفته مشاوره و طراحی تخصصی در حیطه شبکه و سرور
           </p>
         </div>
         <div className="flex flex-col items-center ">
@@ -32,7 +33,7 @@ export default function CounselingIntroduction() {
           </div>
         </div>
       </div>
-      <div className="xl:mt-20">
+      <div className="xl:mt-20 flex flex-col items-center">
         <img
           src="/images/CounselingPng.png"
           alt="null"
@@ -40,6 +41,10 @@ export default function CounselingIntroduction() {
           height={330}
           className="w-auto h-[166px] object-cover sm:h-[329px] xl:w-800"
         />
+        <p className="relative bottom-19 text-white font-bold text-[8px] sm:bottom-40 sm:text-[15px] xl:text-2xl">
+          اگر استراتژی فعلی شما تنها بر بقای روزمره تمرکز دارد. شما در حال ساختن
+          آینده نیستید، تنها در حال ترمیم گذشته‌اید
+        </p>
       </div>
     </div>
   );

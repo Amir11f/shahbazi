@@ -1,12 +1,17 @@
 import navbarItems from "@/data/navbarItems";
 import Image from "next/image";
-import { MenuIcon, SearchIcon, UserCircleIcon } from "@/index";
+import {
+  MenuIcon,
+  NavbarMahziarLogo,
+  SearchIcon,
+  UserCircleIcon,
+} from "@/index";
 
 export default function Navbar() {
   return (
     <div>
       <div className="w-full h-[74px] flex items-center justify-center  sm:h-25 font-cursive">
-        <div className="w-[88%] h-12  flex flex-row justify-between sm:h-[70px] xl:gap-[141px] ">
+        <div className="w-[88%] h-12  flex flex-row justify-between sm:h-[70px] xl:max-gap-[141px] ">
           <button className="w-8 h-8 bg-golden self-center rounded-lg sm:w-12 sm:h-12 sm:rounded-xl xl:hidden hover:bg-hover  flex items-center justify-center">
             <MenuIcon className="w-4.5 h-4.5 sm:h-6 sm:w-6 xl:hidden" />
           </button>
@@ -23,7 +28,7 @@ export default function Navbar() {
               </button>
             </div>
           </div>
-          <div className="hidden xl:flex xl:flex-row text-black xl:gap-4">
+          <div className="hidden xl:flex xl:flex-row text-black xl:gap-5">
             {navbarItems.map((item) => (
               <a
                 key={item.id}
@@ -43,13 +48,14 @@ export default function Navbar() {
                 مشاوره و راه اندازی سیستم های امنیتی
               </p>
             </div>
-            <Image
+            <NavbarMahziarLogo className="w-12 h-12  sm:w-[70px] sm:h-[70px]" />
+            {/* <Image
               alt="null"
               src="/images/BusnessLogo.png"
               width={48}
               height={48}
               className="w-12 h-12  sm:w-[70px] sm:h-[70px]"
-            ></Image>
+            ></Image> */}
           </div>
         </div>
       </div>

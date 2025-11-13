@@ -166,18 +166,18 @@ export default function VerticalHighlightScroll({
   return (
     <div className="flex flex-col font-cursive items-center xl:flex-row-reverse justify-center xl:justify-around">
       <div className="flex flex-col items-center gap-5">
-        <p className="text-3xl font-bold sm:text-[48px] text-center xl:text-end">
+        <p className="text-3xl font-bold sm:text-[48px] text-center xl:text-end xl:w-full xl:mb-3">
           <span className="text-golden text-[28px] sm:text-[44px] mx-1">
             IK10
           </span>
           پروژه های
         </p>
         <p className="font-base  font-thin w-[333px] tracking-[30px] sm:text-lg sm:w-[431px] text-center xl:text-end">
-          لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده
-          از طراحان گرافیک است چاپگرهالورم ایپسوم متن ساختگی با تولید سادگی
-          نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرهالورم
-          ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از
-          طراحان گرافیک است
+          نگاه نـوین و استـراژیک مهزیار شهبازی در رشـد و کارایـی حداکثـری
+          سیستم‌های نظارتی و شبکـه و انطبـاق آن با استاندارهای عصر غیر قابل مهار
+          تکنولوژی است. خلق سبکی هدفمنـد و توسـعه‌پذیـر در مشـاوره ،طـراحی و
+          اجـرای دستـورالعمـل‌هـای نوآورانـه و خلاق در فراینـدهای نظارت و پـایش
+          مجموعه و سازمان‌های شماست.
         </p>
       </div>
       <div className="flex flex-col font-cursive items-center xl:flex-col-reverse justify-center h-full xl:h-500px xl:relative xl:top-20">

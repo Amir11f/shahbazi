@@ -7,20 +7,20 @@ interface Services {
 
 export const popularServices:Services[] = [
     {
-        image:'/images/securityCamera.jpg',
-        service:'نصب دوربین',
+        image:'/images/Camera.svg',
+        service:'نصب دوربین‌مداربسته',
         id:1
     },    {
-        image:'/images/securityCamera.jpg',
-        service:'نصب دوربین',
+        image:'/images/Settings.svg',
+        service:' امداد دوربین',
         id:2
     },    {
-        image:'/images/securityCamera.jpg',
-        service:'نصب دوربین',
+        image:'/images/SirenRounded.svg',
+        service:' اجرا پروژه سرور',
         id:3
     },    {
-        image:'/images/securityCamera.jpg',
-        service:'نصب دوربین',
+        image:'/images/CPUBolt.svg',
+        service:'نصب و راه‌اندازی UPS',
         id:4
     },
 ]

@@ -1,4 +1,5 @@
 import ContactUsNavbar from "@/components/ContactUsNavbar";
+import CounselingExplaination from "@/components/CounselingExplaination";
 import CounselingIntroduction from "@/components/CounselingIntroduction";
 import CounselingOnlineMeeting from "@/components/CounselingOnlineMeeting";
 import CounsellingForm from "@/components/CounsellingForm";
@@ -17,6 +18,7 @@ export default function page() {
       <div className="mt-15 sm:mt-30">
         <CounselingIntroduction />
       </div>
+      <CounselingExplaination />
       <div
         className="relative -top-25 sm:top-12
       "
