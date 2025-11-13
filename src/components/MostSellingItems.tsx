@@ -19,11 +19,11 @@ export default function MostSellingItems() {
             key={item.id}
           >
             <Image
-              src="/images/securityCamera.jpg"
+              src={item.photo}
               alt="null"
               width={333}
               height={250}
-              className="w-[333px] h-[250px] sm:w-[299px] sm:h-[313px] border-[#DFDFDF] border-1 rounded-lg xl:mb-3 cursor-pointer hover:border-golden transition duration-100 xl:w-[267px] xl:h-[313px]"
+              className="w-[333px] h-auto sm:w-[299px] sm:h-auto border-[#DFDFDF] border-1 rounded-lg xl:mb-3 cursor-pointer hover:border-golden transition duration-100 xl:w-[267px] xl:h-auto"
             />
             <div className="flex flex-row-reverse font-thin justify-between mt-2">
               <p className="text-sm text-[#030303] font-thin">{item.name}</p>
