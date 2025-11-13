@@ -9,7 +9,7 @@ export default function MostAskingQuestions() {
 
   return (
     <div className="flex flex-col items-center font-cursive">
-      <p className="text-[22px] font-thin mb-4 sm:text-[40px]">
+      <p className="text-[22px] font-thin mb-4 sm:text-[40px] xl:mb-12">
         سوالات پر تکرار
       </p>
       <div>
