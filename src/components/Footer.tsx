@@ -86,14 +86,30 @@ export default function Footer() {
               دسترسی سریع
             </p>
             <div className="flex flex-col gap-2 text-sm font-light ">
-              <p> قوانین و مقررات</p>
-              <p>شیوه پرداخت</p>
-              <p>اخبار</p>
-              <p>نحوه ثبت سفارش</p>
-              <p>حریم خصوصی</p>
-              <p>حساب کاربری</p>
-              <p>ثبت شکایات</p>
-              <p>پیگیری سفارش</p>
+              <p className="transition duration-100 hover:scale-115 ease-in-out cursor-pointer">
+                قوانین و مقررات
+              </p>
+              <p className="transition duration-100 hover:scale-115 ease-in-out cursor-pointer">
+                شیوه پرداخت
+              </p>
+              <p className="transition duration-100 hover:scale-115 ease-in-out cursor-pointer">
+                اخبار
+              </p>
+              <p className="transition duration-100 hover:scale-115 ease-in-out cursor-pointer">
+                نحوه ثبت سفارش
+              </p>
+              <p className="transition duration-100 hover:scale-115 ease-in-out cursor-pointer">
+                حریم خصوصی
+              </p>
+              <p className="transition duration-100 hover:scale-115 ease-in-out cursor-pointer">
+                حساب کاربری
+              </p>
+              <p className="transition duration-100 hover:scale-115 ease-in-out cursor-pointer">
+                ثبت شکایات
+              </p>
+              <p className="transition duration-100 hover:scale-115 ease-in-out cursor-pointer">
+                پیگیری سفارش
+              </p>
             </div>
           </div>
           <div className="flex flex-col text-center  sm:text-end mt-12  xl:relative xl:bottom-7">

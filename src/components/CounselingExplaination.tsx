@@ -9,7 +9,7 @@ export default function CounselingExplaination() {
         className="w-[371px] h-[484px] bg-amber-950 sm:w-[658px] sm:h-[858px] xl:w-[550px] xl:h-[700px] xl:sticky top-0 "
       />
       <div className="flex flex-col sm:w-[688px] ">
-        <div className="font-normal text-sm flex flex-col gap-5 w-[370px] sm:w-[660px] self-center mt-6 xl:text-lg">
+        <div className="font-normal text-sm flex flex-col gap-5 w-[350px] sm:w-[660px] self-center mt-6 xl:text-lg">
           <span className="">
             در دنیای پرشتاب فناوری، آیا زیرساخت‌های حیاتی (شبکه) کسب‌و‌کار شما
             صرفا‌ ”کارمیکنند” یا به صورت استراتژیک پیشرو هستند ؟
@@ -29,7 +29,7 @@ export default function CounselingExplaination() {
             </span>
           </span>
         </div>
-        <div className="font-thin text-sm flex flex-col w-[370px] sm:w-[660px] self-center mt-15 xl:text-lg">
+        <div className="font-thin text-sm flex flex-col w-[350px] sm:w-[660px] self-center mt-15 xl:text-lg">
           <span className="font-bold mb-6">
             مهندسی امنیت استراتژیک ؛
             <span className="text-golden"> از سرمایه‌گذاری تا مزیت رقابتی</span>

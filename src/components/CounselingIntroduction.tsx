@@ -41,7 +41,7 @@ export default function CounselingIntroduction() {
           height={330}
           className="w-auto h-[166px] object-cover sm:h-[329px] xl:w-800"
         />
-        <p className="relative bottom-19 text-white font-bold text-[8px] sm:bottom-40 sm:text-[15px] xl:text-2xl">
+        <p className="relative bottom-19 text-white font-bold text-[7px] sm:bottom-40 sm:text-[15px] xl:text-2xl">
           اگر استراتژی فعلی شما تنها بر بقای روزمره تمرکز دارد. شما در حال ساختن
           آینده نیستید، تنها در حال ترمیم گذشته‌اید
         </p>

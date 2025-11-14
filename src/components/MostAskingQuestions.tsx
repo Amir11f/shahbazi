@@ -19,14 +19,14 @@ export default function MostAskingQuestions() {
           return (
             <div className="group mb-3" key={item.id}>
               <div
-                className={`w-[360px] h-[54px] rounded-lg border border-black flex flex-row-reverse items-center justify-between cursor-pointer relative sm:w-[692px] xl:w-[1260px] sm:h-[106px] ${
+                className={`w-[350px] h-[54px] rounded-lg border border-black flex flex-row-reverse items-center justify-between cursor-pointer relative sm:w-[692px] xl:w-[1260px] sm:h-[106px] ${
                   isActive && "border-golden z-10"
                 }`}
                 onClick={() =>
                   setActive((prev) => (prev === item.id ? null : item.id))
                 }
               >
-                <p className="text-lg mr-4 sm:text-[28px] sm:mr-10">
+                <p className="text-sm mr-4 sm:text-[28px] sm:mr-10">
                   {item.question}
                 </p>
                 <ArrowRightIcon
@@ -40,7 +40,7 @@ export default function MostAskingQuestions() {
                   isActive ? "max-h-96 opacity-100" : "max-h-0 opacity-0"
                 }`}
               >
-                <div className="w-[360px] border border-t-transparent border-golden rounded-b-lg py-9 bg-white text-right px-4 sm:w-[692px] xl:w-[1260px] sm:text-2xl/10 font-thin ">
+                <div className="w-[350px] border border-t-transparent border-golden rounded-b-lg py-9 bg-white text-right px-4 sm:w-[692px] xl:w-[1260px] sm:text-2xl/10 font-thin ">
                   {item.answer}
                 </div>
               </div>
