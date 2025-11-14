@@ -24,7 +24,7 @@ export default function BlackResumeBox() {
         height={237}
         className=" hidden xl:flex "
       />
-      <div className=" text-[#efefef] rounded-[40px] p-10 w-[373px] mx-auto relative -top-85 sm:-top-95 sm:-left-43 xl:-left-72 xl:-top-60">
+      <div className=" text-[#efefef] rounded-[40px] p-10 w-[350px] mx-auto relative -top-85 sm:-top-95 sm:-left-43 xl:-left-72 xl:-top-60">
         <div className="grid grid-cols-1 text-xs gap-7 sm:text-base sm:flex sm:flex-col sm:w-160 xl:w-220 xl:gap-0 ">
           {/* Item 1 */}
           <div className="flex items-center justify-end gap-4 w-full text-right relative xl:-bottom-1 ">
@@ -48,7 +48,7 @@ export default function BlackResumeBox() {
             </div>
           </div>
           {/* Item 4 */}
-          <div className="flex items-center justify-start gap-4 sm:justify-center sm:relative sm:-top-38 sm:left-2 xl:-top-34">
+          <div className="flex items-center justify-start gap-4 sm:justify-center sm:relative sm:-top-38 sm:left-2 relative right-8 sm:right-0 xl:-top-34">
             <div className="text-right flex flex-col gap-1 sm:gap-3">
               <p className="font-bold text-base sm:text-xl">+۳۰۰</p>
               <p className="">پروژه نظارت تصویری اداری و صنعتی و خانگی</p>

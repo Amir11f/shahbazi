@@ -11,7 +11,7 @@ export default function MostPopularServices() {
         {popularServices.map((item) => (
           <div
             key={item.id}
-            className="flex flex-col items-center w-[176px] h-[171px] border-2 border-[#DFDFDF] gap-5 justify-center sm:gap-8 sm:w-[251px] sm:h-[244px] rounded-lg cursor-pointer hover:border-golden transition duration-100 hover:scale-105 ease-in-out"
+            className="flex flex-col items-center w-[167px] h-[160px] border-2 border-[#DFDFDF] gap-5 justify-center sm:gap-8 sm:w-[251px] sm:h-[244px] rounded-lg cursor-pointer hover:border-golden transition duration-100 hover:scale-105 ease-in-out"
           >
             <Image
               src={item.image}

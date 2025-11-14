@@ -1,6 +1,10 @@
-import React from "react";
+"use client";
+import { useState } from "react";
+import TypeWriter from "./TypeWriter";
 
 export default function CounselingExplaination() {
+  const [line2Ready, setLine2Ready] = useState(false);
+
   return (
     <div className="flex flex-col items-center-safe font-cursive  h-435  xl:flex-row xl:items-start xl:h-305 xl:mb-20 xl:justify-center relative bottom-25 sm:bottom-0 xl:gap-13">
       <img
@@ -8,27 +12,43 @@ export default function CounselingExplaination() {
         alt=""
         className="w-[371px] h-[484px] bg-amber-950 sm:w-[658px] sm:h-[858px] xl:w-[550px] xl:h-[700px] xl:sticky top-0 "
       />
-      <div className="flex flex-col sm:w-[688px] ">
-        <div className="font-normal text-sm flex flex-col gap-5 w-[370px] sm:w-[660px] self-center mt-6 xl:text-lg">
-          <span className="">
-            در دنیای پرشتاب فناوری، آیا زیرساخت‌های حیاتی (شبکه) کسب‌و‌کار شما
-            صرفا‌ ”کارمیکنند” یا به صورت استراتژیک پیشرو هستند ؟
+      <div className="flex flex-col items-center text-center mx-3 sm:w-[70%] xl:w-[30%]">
+        <p className="text-[18px] font-bold mb-3 sm:text-[28px] leading-[1.6]">
+          <span className="text-golden text-[28px] sm:text-[48px] block">
+            <TypeWriter
+              text={"مهزیار شهبازی نژاد"}
+              speed={80}
+              soundPath={"/sounds/type.mp3"}
+              onDone={() => setLine2Ready(true)}
+              className="inline-block"
+            />
           </span>
-          {/* <br className="" /> */}
-          <span className=" flex flex-col">
-            در دنیای امروز که مرز بین ثبات و اختلال تنها یک نقص فنی کوچک است،
-            آیا بناهای فعلی شما، سکوی پرتاب کسب و کارتان هستند یا یک ریسک دائمی
-            ؟
-            <br />
-            آیا زمان آن نرسیده که از سطح “نصب و راه اندازی” فراتر روید و وارد
-            مرحله “مهندسی برتری پایدار” شوید ؟
-            <br />
-            <span className="mt-5">
-              ابزارهای شبکه، ارتباطی نظارتی سازمانی شما، صرفا یک ”هزینه ضروری
-              “است یا مهم ترین “اهرم استراتژیک” برای سبقت گرفتن از رقبا ؟
-            </span>
+
+          <br />
+
+          {/* second line: starts only after first finishes */}
+          <span className="block">
+            {line2Ready ? (
+              <TypeWriter
+                text={"طراح ،‌‌‌ مشاور و مجری سیستم‌‌های نظارتی و شبکه"}
+                speed={45}
+                soundPath={"/sounds/type.mp3"}
+                className=""
+              />
+            ) : (
+              // placeholder to preserve layout while waiting
+              <span className="opacity-0">
+                طراح ،‌‌‌ مشاور و مجری سیستم‌‌های نظارتی و شبکه
+              </span>
+            )}
           </span>
-        </div>
+        </p>
+
+        <p className="text-xs/6 text-[#262626] font-thin mx-2 sm:text-lg/9 ">
+          تیم تخصصی اجرا و راه اندازی تجهیزات برند هایک‌‌‌ویژن سبد محصولاتی از
+          برترین برند های جهانی ارئه سرویس و خدمات امنیتی نظارتی و شبکه 7 روز
+          هفته مشاوره و طراحی تخصصی در حیطه شبکه و سرور
+        </p>
         <div className="font-thin text-sm flex flex-col w-[370px] sm:w-[660px] self-center mt-15 xl:text-lg">
           <span className="font-bold mb-6">
             مهندسی امنیت استراتژیک ؛
