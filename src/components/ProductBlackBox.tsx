@@ -46,7 +46,7 @@ export default function ProductBlackBox() {
               alt="null"
               width={155}
               height={114}
-              className="sm:w-[109px] h-[109px] mt-5 sm:mt-4"
+              className="sm:w-[109px] h-[95px] mt-5 sm:mt-4"
             />
             <div className="flex flex-col items-center cursor-pointer ">
               <p className="text-[17px]  mt-3 sm:mt-1 mb-3 "> {item.service}</p>
