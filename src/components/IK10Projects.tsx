@@ -172,13 +172,13 @@ export default function VerticalHighlightScroll({
           </span>
           پروژه های
         </p>
-        {/* <p className="font-base  font-thin w-[333px] tracking-[30px] sm:text-lg sm:w-[431px] text-center xl:text-end">
+        <p className="font-base  font-thin w-[333px] tracking-[30px] sm:text-lg sm:w-[431px] text-center xl:text-end">
           نگاه نـوین و استـراژیک مهزیار شهبازی در رشـد و کارایـی حداکثـری
           سیستم‌های نظارتی و شبکـه و انطبـاق آن با استاندارهای عصر غیر قابل مهار
           تکنولوژی است. خلق سبکی هدفمنـد و توسـعه‌پذیـر در مشـاوره ،طـراحی و
           اجـرای دستـورالعمـل‌هـای نوآورانـه و خلاق در فراینـدهای نظارت و پـایش
           مجموعه و سازمان‌های شماست.
-        </p> */}
+        </p>
       </div>
       <div className="flex flex-col font-cursive items-center xl:flex-col-reverse justify-center h-full xl:h-500px xl:relative xl:top-20">
         <button className="w-25 h-10 bg-golden rounded-lg text-xl text-white relative mt-15 z-40 hover:bg-hover sm:w-27 sm:h-13 text-[22px] xl:m-0 xl:-top-45">

@@ -77,7 +77,7 @@ export default function MahziarIntroduction() {
           </div>
         </div>
       </div>
-      <div className=" flex flex-col bg-black w-[99%] xl:w-[87%] h-[219px] mb-20 rounded-xl text-white items-center justify-center gap-y-5 xl:flex-row relative top-20 sm:-top-10 ">
+      <div className=" flex flex-col bg-black w-[99%] xl:w-[87%] h-[219px] mb-20 rounded-xl text-white items-center justify-center gap-y-5 xl:flex-row relative top-20 sm:-top-10 xl:rounded-3xl xl:h-[170px] ">
         <div className="flex flex-row-reverse gap-0 sm:gap-9 xl:gap-0 text-base font-thin">
           <div className="flex flex-col items-center gap-4 justify-center cursor-pointer hover:text-golden hover:scale-105">
             <CameraIconS className="w-8 h-7 sm:w-10 sm:h-9 text-white" />
