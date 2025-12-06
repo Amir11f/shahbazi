@@ -105,27 +105,20 @@ export default function VerticalHighlightScroll({
       const container = document.getElementById(`waveform-${i}`);
       if (!container || wavesurferRefs.current[i]) return;
 
-      // Get screen width
       const screenWidth = window.innerWidth;
+      let height = 32,
+        barWidth = 2,
+        barGap = 4;
 
-      // Set default values
-      let height = 32;
-      let barWidth = 2;
-      let barGap = 4;
-
-      // Adjust values with if statements
       if (screenWidth < 640) {
-        // mobile
         height = 32;
         barWidth = 1;
         barGap = 3;
-      } else if (screenWidth >= 640 && screenWidth < 1024) {
-        // tablet
+      } else if (screenWidth < 1024) {
         height = 52;
         barWidth = 1;
         barGap = 4;
       } else {
-        // desktop
         height = 63;
         barWidth = 2;
         barGap = 5;
@@ -140,7 +133,6 @@ export default function VerticalHighlightScroll({
         barWidth,
         barGap,
         barRadius: 1,
-        // responsive: true,
         normalize: true,
       });
 
@@ -148,8 +140,11 @@ export default function VerticalHighlightScroll({
       wavesurferRefs.current[i] = ws;
     });
 
+    // FIX: Capture current ref
+    const localRefs = [...wavesurferRefs.current];
+
     return () => {
-      wavesurferRefs.current.forEach((ws) => ws?.destroy());
+      localRefs.forEach((ws) => ws?.destroy());
     };
   }, [items]);
 
@@ -172,7 +167,7 @@ export default function VerticalHighlightScroll({
           </span>
           پروژه های
         </p>
-        <p className="font-base  font-thin w-[333px] tracking-[30px] sm:text-lg sm:w-[431px] text-center xl:text-end">
+        <p className="text-base font-thin w-[333px] sm:text-lg sm:w-[431px] text-center xl:text-end">
           نگاه نـوین و استـراژیک مهزیار شهبازی در رشـد و کارایـی حداکثـری
           سیستم‌های نظارتی و شبکـه و انطبـاق آن با استاندارهای عصر غیر قابل مهار
           تکنولوژی است. خلق سبکی هدفمنـد و توسـعه‌پذیـر در مشـاوره ،طـراحی و
@@ -214,10 +209,10 @@ export default function VerticalHighlightScroll({
                   >
                     <div className="flex flex-col">
                       <div className="text-[1.1rem] font-semibold text-black">
-                        {/* {item.title} */}
+                        <div></div>
                       </div>
                       <div className="text-[0.85rem] opacity-80 mb-2 text-black">
-                        {/* {item.subtitle} */}
+                        <div></div>
                       </div>
                       <div
                         id={`waveform-${index}`}
