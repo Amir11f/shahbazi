@@ -208,12 +208,12 @@ export default function VerticalHighlightScroll({
                     style={{ scale, opacity, zIndex: isActive ? 2 : 1 }}
                   >
                     <div className="flex flex-col">
-                      <div className="text-[1.1rem] font-semibold text-black">
+                      {/* <div className="text-[1.1rem] font-semibold text-black">
                         <div></div>
                       </div>
                       <div className="text-[0.85rem] opacity-80 mb-2 text-black">
                         <div></div>
-                      </div>
+                      </div> */}
                       <div
                         id={`waveform-${index}`}
                         className="w-[220px] sm:w-[324px] sm:ml-5 xl:w-95 xl:ml-7"
