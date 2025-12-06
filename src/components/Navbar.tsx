@@ -1,12 +1,12 @@
 "use client";
 import navbarItems from "@/data/navbarItems";
-import Image from "next/image";
 import {
   MenuIcon,
   NavbarMahziarLogo,
   SearchIcon,
   UserCircleIcon,
 } from "@/index";
+import Link from "next/link";
 import { useState } from "react";
 
 export default function Navbar() {
@@ -46,12 +46,12 @@ export default function Navbar() {
                     key={item.id}
                     className="w-full flex flex-col items-end justify-end mt-2"
                   >
-                    <a
+                    <Link
                       href={item.link}
                       className="text-black text-base font-thin mx-0 px-0 hover:text-hover"
                     >
                       {item.title}
-                    </a>
+                    </Link>
                   </div>
                 ))}
               </div>
@@ -74,19 +74,19 @@ export default function Navbar() {
                 <UserCircleIcon />
               </button>
               <button className=" hidden xl:flex xl:w-12 xl:h-12 transition duration-100 xl:bg-golden hover:bg-hover xl:rounded-xl justify-center items-center">
-                <SearchIcon />
+                <SearchIcon className="text-white " />
               </button>
             </div>
           </div>
           <div className="hidden xl:flex xl:flex-row text-black xl:gap-5">
             {navbarItems.map((item) => (
-              <a
+              <Link
                 key={item.id}
                 href={item.link}
                 className="hidden xl:text-black font-thin xl:text-base xl:mx-0 xl:px-0 xl:flex xl:items-center xl:justify-center transition-transform duration-200 ease-in-out hover:-translate-y-1"
               >
                 {item.title}
-              </a>
+              </Link>
             ))}
           </div>
           <div className="flex flex-row">
@@ -98,9 +98,9 @@ export default function Navbar() {
                 مشاوره و راه اندازی سیستم های امنیتی
               </p>
             </div>
-            <a href="/">
+            <Link href="/">
               <NavbarMahziarLogo className="w-12 h-12  sm:w-[70px] sm:h-[70px] cursor-pointer" />
-            </a>
+            </Link>
           </div>
         </div>
       </div>

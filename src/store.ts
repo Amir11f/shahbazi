@@ -1,9 +1,9 @@
-import { create } from "zustand"
+import { create } from "zustand";
 
 type ShoppingBag = {
- id:number
-}
+  id: number;
+};
 
-export const useShoppingBag = create<ShoppingBag>(()=>{
+// export const useShoppingBag = create<ShoppingBag>(()=>{
 
-})
+// })

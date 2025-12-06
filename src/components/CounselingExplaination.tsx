@@ -1,11 +1,14 @@
+import Image from "next/image";
 import React from "react";
 
 export default function CounselingExplaination() {
   return (
     <div className="flex flex-col items-center-safe font-cursive  h-435  xl:flex-row xl:items-start xl:h-305 xl:mb-20 xl:justify-center relative bottom-25 sm:bottom-0 xl:gap-13">
-      <img
-        src=""
-        alt=""
+      <Image
+        src="/public/images/BusnessLogo.png"
+        width={371}
+        height={484}
+        alt="null"
         className="w-[371px] h-[484px] bg-amber-950 sm:w-[658px] sm:h-[858px] xl:w-[550px] xl:h-[700px] xl:sticky top-0 "
       />
       <div className="flex flex-col sm:w-[688px] ">

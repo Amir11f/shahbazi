@@ -59,7 +59,7 @@ export default function TypeWriter({
     });
 
     return () => timers.forEach((id) => clearTimeout(id));
-  }, [text, speed, startDelay, playSound, soundPath]);
+  }, [text, speed, startDelay, playSound, soundPath, play]);
 
   return <span className={className}>{displayed}</span>;
 }

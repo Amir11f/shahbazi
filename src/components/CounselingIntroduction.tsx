@@ -34,7 +34,7 @@ export default function CounselingIntroduction() {
         </div>
       </div>
       <div className="xl:mt-20 flex flex-col items-center">
-        <img
+        <Image
           src="/images/CounselingPng.png"
           alt="null"
           width={900}
