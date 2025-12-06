@@ -2,7 +2,7 @@ import BlackResumeBox from "@/components/BlackResumeBox";
 import ContactUsNavbar from "@/components/ContactUsNavbar";
 import CoWorder from "@/components/CoWorder";
 import Footer from "@/components/Footer";
-import IK10Projects from "@/components/IK10Projects";
+// import IK10Projects from "@/components/IK10Projects";
 import JoinOurNewsletter from "@/components/JoinOurNewsletter";
 import MahziarIntroduction from "@/components/MahziarIntroduction";
 import MostPopularServices from "@/components/MostPopularServices";
@@ -33,7 +33,7 @@ export default function Home() {
       <ContactUsNavbar />
       <Navbar />
       <MahziarIntroduction />
-      <IK10Projects items={items} />
+      {/* <IK10Projects items={items} /> */}
       <MostPopularServices />
       <BlackResumeBox />
       <MostSellingItems />
