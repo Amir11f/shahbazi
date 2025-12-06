@@ -17,7 +17,7 @@ export default function TypeWriter({
   speed = 60,
   startDelay = 0,
   playSound = true,
-  soundPath = "/sounds/type.mp3",
+  soundPath = "/audios/light-rain-109591.mp3",
   //   onDone,
   className = "",
 }: Props) {

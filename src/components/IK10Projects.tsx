@@ -136,7 +136,7 @@ export default function VerticalHighlightScroll({
         normalize: true,
       });
 
-      ws.load(item.audioUrl);
+      ws.load("/audios/light-rain-109591.mp3");
       wavesurferRefs.current[i] = ws;
     });
 
