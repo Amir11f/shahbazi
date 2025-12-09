@@ -12,7 +12,7 @@ export default function MahziarIntroduction() {
                 text="مهزیار شهبازی نژاد"
                 speed={60}
                 className="text-golden text-[28px] sm:text-[48px]"
-              />{" "}
+              />
             </span>
             <br />
             <TypeWriter
@@ -80,19 +80,37 @@ export default function MahziarIntroduction() {
       <div className=" flex flex-col bg-black w-[99%] xl:w-[87%] h-[219px] mb-20 rounded-xl text-white items-center justify-center gap-y-5 xl:flex-row relative top-20 sm:-top-10 xl:rounded-3xl xl:h-[170px] ">
         <div className="flex flex-row-reverse gap-0 sm:gap-9 xl:gap-0 text-base font-thin">
           <div className="flex flex-col items-center gap-4 justify-center cursor-pointer hover:text-golden hover:scale-105">
-            <CameraIconS className="w-8 h-7 sm:w-10 sm:h-9 text-white" />
+            <Image
+              src="/icons1/BlackBoxCamera22.svg"
+              alt="null"
+              width={32}
+              height={28}
+              className="w-8 h-7 sm:w-13 sm:h-12 text-white"
+            />
             <p className="text-[11px] sm:text-[15px] xl:text-lg">
               پروژه نصب دوربین مدار بسته
             </p>
           </div>
           <hr className="text-[#424242] w-10 xl:w-18 sm:w-15 sm:top-9 h-[1px] rotate-90 relative -bottom-6" />
           <div className="flex flex-col items-center gap-4 justify-center cursor-pointer hover:text-golden hover:scale-105">
-            <HouseIcon className="w-8 h-7 sm:w-10 sm:h-9" />
+            <Image
+              src="/icons1/BlackboxShop22.svg"
+              alt="null"
+              width={32}
+              height={28}
+              className="w-8 h-7 sm:w-13 sm:h-12"
+            />
             <p className="text-[11px] sm:text-[15px] xl:text-lg">فروشگاه</p>
           </div>
           <hr className="text-[#424242] w-10 xl:w-18 sm:w-15 sm:top-9 h-[1px] rotate-90 relative -bottom-6" />
           <div className="flex flex-col items-center gap-4 justify-center cursor-pointer hover:text-golden hover:scale-105">
-            <HouseIcon className="w-8 h-7 sm:w-10 sm:h-9" />
+            <Image
+              src="/icons1/BlackBoxthiefAlert.svg"
+              alt="null"
+              width={32}
+              height={28}
+              className="w-8 h-7 sm:w-13 sm:h-12"
+            />
             <p className="text-[11px] sm:text-[15px] xl:text-lg">
               پروژه نصب دزدگیر اماکن
             </p>
@@ -108,7 +126,13 @@ export default function MahziarIntroduction() {
           </div>
           <hr className="text-[#424242] w-10 xl:w-18 sm:w-15 sm:top-9 h-[1px] rotate-90 relative -bottom-6" />
           <div className="flex flex-col items-center gap-4 justify-center cursor-pointer hover:text-golden hover:scale-105">
-            <HouseIcon className="w-8 h-7 sm:w-10 sm:h-9" />
+            <Image
+              src="/icons1/BlackBoxHikas.svg"
+              alt="null"
+              width={32}
+              height={28}
+              className="w-8 h-7 sm:w-13 sm:h-12"
+            />
             <p className="text-[11px] sm:text-[15px] xl:text-lg">هایکست</p>
           </div>
           <hr className="text-[#424242] w-10 xl:w-18 sm:w-15 sm:top-9 h-[1px] rotate-90 relative -bottom-6" />

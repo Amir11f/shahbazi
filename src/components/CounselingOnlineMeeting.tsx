@@ -32,7 +32,7 @@ export default function CounselingOnlineMeeting() {
           <div className="h-11 bg-golden w-[2px] rounded-2xl"></div>
         </div>
         <Image
-          src="/images/CounselingMeetingPicture.png"
+          src="/images/phisicalMeeting.png"
           alt="null"
           width={342}
           height={139}
@@ -66,7 +66,7 @@ export default function CounselingOnlineMeeting() {
           <div className="h-11 bg-golden w-[2px] rounded-2xl"></div>
         </div>
         <Image
-          src="/images/CounselingMeetingPicture.png"
+          src="/images/OnlineMeeting.png"
           alt="null"
           width={342}
           height={139}
