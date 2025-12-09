@@ -12,7 +12,7 @@ export default function MahziarIntroduction() {
                 text="مهزیار شهبازی نژاد"
                 speed={60}
                 className="text-golden text-[28px] sm:text-[48px]"
-              />{" "}
+              />
             </span>
             <br />
             <TypeWriter

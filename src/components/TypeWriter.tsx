@@ -6,8 +6,8 @@ type Props = {
   text: string;
   speed?: number;
   startDelay?: number;
-  playSound?: boolean;
-  soundPath?: string;
+  // playSound?: boolean;
+  // soundPath?: string;
   onDone?: () => void;
   className?: string;
 };
@@ -16,13 +16,13 @@ export default function TypeWriter({
   text,
   speed = 60,
   startDelay = 0,
-  playSound = true,
-  soundPath = "/audios/light-rain-109591.mp3",
+  // playSound = true,
+  // soundPath = "/audios/light-rain-109591.mp3",
   //   onDone,
   className = "",
 }: Props) {
   const [displayed, setDisplayed] = useState("");
-  const [play] = useSound(soundPath, { volume: 0.35, interrupt: true });
+  // const [play] = useSound(soundPath, { volume: 0.35, interrupt: true });
 
   const hasRunRef = useRef<string | null>(null);
 
@@ -44,11 +44,11 @@ export default function TypeWriter({
       const t = window.setTimeout(() => {
         setDisplayed((prev) => prev + ch);
 
-        if (playSound && ch.trim() !== "") {
-          try {
-            play();
-          } catch {}
-        }
+        // if (playSound && ch.trim() !== "") {
+        //   try {
+        //     play();
+        //   } catch {}
+        // }
 
         // if (i === chars.length - 1) {
         //   onDone?.();
@@ -59,7 +59,12 @@ export default function TypeWriter({
     });
 
     return () => timers.forEach((id) => clearTimeout(id));
-  }, [text, speed, startDelay, playSound, soundPath, play]);
+  }, [
+    text,
+    speed,
+    startDelay,
+    // playSound, soundPath, play
+  ]);
 
   return <span className={className}>{displayed}</span>;
 }
