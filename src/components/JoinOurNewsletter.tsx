@@ -29,7 +29,8 @@ export default function JoinOurNewsletter() {
         width={228}
         height={170}
         className="w-[328px] h-[170px] sm:w-[480px] sm:h-[244px] xl:w-[700px] xl:h-[372px] xl:relative xl:right-50 "
-      ></Image>
+        unoptimized={true}
+      />
     </div>
   );
 }
