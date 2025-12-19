@@ -42,7 +42,7 @@ function ProjectCard({ item }: { item: InstagramLike }) {
   return (
     <div className="relative rounded-2xl overflow-hidden shadow-sm border border-[#F6F6F6] bg-blue-300 transition duration-100 hover:scale-102  ease-in-out">
       <video
-        src={"kajdf;aldk"}
+        src={"null"}
         className="w-full h-full object-cover"
         autoPlay
         muted
