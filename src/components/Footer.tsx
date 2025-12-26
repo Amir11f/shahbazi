@@ -31,17 +31,23 @@ export default function Footer() {
                 quality={90}
               ></Image>
             </div>
-            <p className=" text-xs font-thin mt-3 text-center  sm:text-end mb-10 w-[200px] sm:w-[300px] text-[#f0f0f0]">
+            <p className=" text-xs font-thin mt-3 text-center  sm:text-end mb-10  text-[#f0f0f0] whitespace-nowrap">
               مهزیار شهبازی نژاد ،که از او بعنوان پدیده نوظهور دنیا مشاوره و
-              اجرایی طرح‌ها و پروژه‌های زیرسـاختی شبکه و سیستم‌های نظارتی یاد
-              میشود و با زیستن نگرش‌های خاص خود که منجر به پیروی برخی از شرکت ها
-              و مجموعه‌ها از این الگو ذهنی و نهایتـا به شکل گیری تجربیاتی درخشان
-              در آن شرکت‌ها ختم شد،حالا با تکیه بر مهـارت و تجربیـات اجرایی تیم
-              مجرب و تـوانمند خود بیش از پیش در تـلاش است که با چـشم‌انداز و
-              بینشی متفاوت در اجرای استاندار فرایندهای ارتباطی در سطوح مختلف
-              شبکـه ،سـرور، امنیت داده‌ها و نظارت‌های سیستمی و بصری اماکن و
-              مجموعـه‌ها همواره راه‌گشـای پیشروی سازمان‌ها و شرکت‌های موفق
-              ایرانی بوده است.
+              اجرایی
+              <br /> طرح‌ها و پروژه‌های زیرسـاختی شبکه و سیستم‌های نظارتی یاد
+              میشود
+              <br /> و با زیستن نگرش‌های خاص خود که منجر به پیروی برخی از شرکت
+              ها و<br /> مجموعه‌ها از این الگو ذهنی و نهایتـا به شکل گیری
+              تجربیاتی درخشان
+              <br /> در آن شرکت‌ها ختم شد،حالا با تکیه بر مهـارت و تجربیـات
+              اجرایی تیم
+              <br /> مجرب و تـوانمند خود بیش از پیش در تـلاش است که با
+              چـشم‌انداز و<br /> بینشی متفاوت در اجرای استاندار فرایندهای
+              ارتباطی در سطوح مختلف
+              <br /> شبکـه ،سـرور، امنیت داده‌ها و نظارت‌های سیستمی و بصری اماکن
+              و<br /> مجموعـه‌ها همواره راه‌گشـای پیشروی سازمان‌ها و شرکت‌های
+              موفق
+              <br />. ایرانی بوده است
             </p>
           </div>
           <div className="flex flex-col h-full  sm:text-end w-full sm:mt-0 xl:relative xl:-bottom-2 sm:relative sm:-bottom-8 xl:-top-0.5 text-right ">
@@ -140,7 +146,10 @@ export default function Footer() {
             <GoogleIcon className="hover:text-golden  transition duration-100 hover:scale-115  ease-in-out cursor-pointer" />
             <YouTubeIcon className="hover:text-golden  transition duration-100 hover:scale-115  ease-in-out cursor-pointer" />
           </div>
-          <p className="text-[10px]/6 xl:text-[14px]/6 w-full text-center px-9 sm:px-0 xl:w-220 mt-5 sm:text-end text-[#d0d0d0] sm:w-[620px]">
+          <p
+            dir="rtl"
+            className="text-[10px]/6 xl:text-[14px]/6 w-full text-center px-9 sm:px-0 xl:w-220 mt-5 sm:text-end text-[#d0d0d0] sm:w-[620px] relative sm:left-3 xl:left-6"
+          >
             2025 مهزیار شهبازی نژاد.تمامی حقوق محفوظ میباشد. با هدف توسعه و
             بهروری دانش کاربران و مخاطبان استفاده از محتوای سایت با ذکر منبع
             مجاز میباشد.
