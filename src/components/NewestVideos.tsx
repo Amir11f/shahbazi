@@ -13,6 +13,7 @@ export default function NewestVideos() {
       </div>
       <div className="flex flex-col-reverse items-center gap-2.5 sm:flex-col xl:flex-row-reverse">
         <Image
+          quality={85}
           src="/productImages/Frame 1890166893 (1).jpg"
           alt="null"
           width={108}
@@ -21,6 +22,7 @@ export default function NewestVideos() {
         ></Image>
         <div className="flex flex-row gap-2.5 sm:gap-4.5">
           <Image
+            quality={85}
             src="/productImages/Group 40077.jpg"
             alt="null"
             width={173}
@@ -28,6 +30,7 @@ export default function NewestVideos() {
             className="w-[173px] h-[159px]rounded-lg sm:w-[311px] sm:h-[286px] sm:rounded-2xl hover:scale-102"
           ></Image>
           <Image
+            quality={85}
             src="/productImages/Group 40078.jpg"
             alt="null"
             width={173}

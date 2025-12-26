@@ -15,21 +15,11 @@ export default function SlideUpOnScroll({
   });
 
   useEffect(() => {
-    if (inView) {
-      controls.start({
-        opacity: 1,
-        y: 0,
-        transition: { duration: 0.7, ease: "easeOut" },
-      });
-    }
+    if (inView) controls.start("visible");
   }, [inView, controls]);
 
   return (
-    <motion.div
-      ref={ref}
-      initial={{ opacity: 0, y: 80 }} // start below
-      animate={controls}
-    >
+    <motion.div ref={ref} initial="hidden" animate={controls}>
       {children}
     </motion.div>
   );

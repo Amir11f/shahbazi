@@ -28,6 +28,7 @@ export default function Footer() {
                 width={70}
                 height={70}
                 className=" w-[70px] h-[70px]"
+                quality={90}
               ></Image>
             </div>
             <p className=" text-xs font-thin mt-3 text-center  sm:text-end mb-10 w-[200px] sm:w-[300px] text-[#f0f0f0]">

@@ -21,6 +21,12 @@ export default function VerticalHighlightScroll({
   const [currentIndex, setCurrentIndex] = useState(0);
   const containerRef = useRef<HTMLDivElement | null>(null);
   const wavesurferRefs = useRef<(WaveSurfer | null)[]>([]);
+  const isMountedRef = useRef(true);
+  useEffect(() => {
+    return () => {
+      isMountedRef.current = false;
+    };
+  }, []);
 
   /* ─────────── Scroll detection ─────────── */
   useEffect(() => {
@@ -101,9 +107,13 @@ export default function VerticalHighlightScroll({
 
   /* ─────────── WaveSurfer setup (custom render) ─────────── */
   useEffect(() => {
+    if (!items.length) return;
+
     items.forEach((item, i) => {
+      if (wavesurferRefs.current[i]) return;
+
       const container = document.getElementById(`waveform-${i}`);
-      if (!container || wavesurferRefs.current[i]) return;
+      if (!container) return;
 
       const screenWidth = window.innerWidth;
       let height = 32,
@@ -111,13 +121,11 @@ export default function VerticalHighlightScroll({
         barGap = 4;
 
       if (screenWidth < 640) {
-        height = 32;
         barWidth = 1;
         barGap = 3;
       } else if (screenWidth < 1024) {
         height = 52;
         barWidth = 1;
-        barGap = 4;
       } else {
         height = 63;
         barWidth = 2;
@@ -136,15 +144,24 @@ export default function VerticalHighlightScroll({
         normalize: true,
       });
 
-      ws.load(item.audioUrl);
       wavesurferRefs.current[i] = ws;
+
+      // SAFE LOAD
+      ws.load(item.audioUrl);
+
+      // Optional: handle ready
+      ws.on("ready", () => {
+        if (!isMountedRef.current) {
+          ws.pause();
+        }
+      });
     });
 
-    // FIX: Capture current ref
-    const localRefs = [...wavesurferRefs.current];
-
     return () => {
-      localRefs.forEach((ws) => ws?.destroy());
+      // 🚨 DO NOT destroy
+      wavesurferRefs.current.forEach((ws) => {
+        ws?.pause();
+      });
     };
   }, [items]);
 
@@ -208,12 +225,12 @@ export default function VerticalHighlightScroll({
                     style={{ scale, opacity, zIndex: isActive ? 2 : 1 }}
                   >
                     <div className="flex flex-col">
-                      {/* <div className="text-[1.1rem] font-semibold text-black">
+                      <div className="text-[1.1rem] font-semibold text-black">
                         <div></div>
                       </div>
                       <div className="text-[0.85rem] opacity-80 mb-2 text-black">
                         <div></div>
-                      </div> */}
+                      </div>
                       <div
                         id={`waveform-${index}`}
                         className="w-[220px] sm:w-[324px] sm:ml-5 xl:w-95 xl:ml-7"
