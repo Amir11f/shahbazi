@@ -167,12 +167,15 @@ export default function VerticalHighlightScroll({
           </span>
           پروژه های
         </p>
-        <p className="text-base font-thin w-[333px] sm:text-lg sm:w-[431px] text-center xl:text-end">
+        <p className="text-base font-thin  sm:text-lg  xl:text-end whitespace-nowrap text-right">
           نگاه نـوین و استـراژیک مهزیار شهبازی در رشـد و کارایـی حداکثـری
-          سیستم‌های نظارتی و شبکـه و انطبـاق آن با استاندارهای عصر غیر قابل مهار
-          تکنولوژی است. خلق سبکی هدفمنـد و توسـعه‌پذیـر در مشـاوره ،طـراحی و
-          اجـرای دستـورالعمـل‌هـای نوآورانـه و خلاق در فراینـدهای نظارت و پـایش
-          مجموعه و سازمان‌های شماست.
+          <br />
+          سیستم‌های نظارتی و شبکـه و انطبـاق آن با استاندارهای عصر غیر
+          <br /> قابل مهار تکنولوژی است
+          <div className="h-4"></div>
+          <br /> خلق سبکی هدفمنـد و توسـعه‌پذیـر در مشـاوره ،طـراحی و اجـرای
+          <br /> دستـورالعمـل‌هـای نوآورانـه و خلاق در فراینـدهای نظارت و پـایش
+          <br /> مجموعه و سازمان‌های شماست.
         </p>
       </div>
       <div className="flex flex-col font-cursive items-center xl:flex-col-reverse justify-center h-full xl:h-500px xl:relative xl:top-20">
