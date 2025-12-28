@@ -7,15 +7,17 @@ import InstagramLikeVideoPosts from "@/components/InstagramLikeVideoPosts";
 import ExploreSection from "@/components/ExploreSection";
 import CowWorker from "@/components/CoWorder";
 import MostAskingQuestions from "@/components/MostAskingQuestions";
+import CategoryServices from "@/components/CategoryServices";
 
 export default function page() {
   return (
     <div>
       <Navbar />
-      <ServicesProductSection />
+      {/* <ServicesProductSection />
       <MostAskingQuestions />
       <CowWorker />
-      <ExploreSection />
+      <ExploreSection /> */}
+      <CategoryServices />
       <InstagramLikeVideoPosts />
       <JoinOurNewsletter />
       <Footer />

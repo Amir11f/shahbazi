@@ -19,10 +19,7 @@ export default function page() {
         <CounselingIntroduction />
       </div>
       <CounselingExplaination />
-      <div
-        className="relative -top-25 sm:top-12
-      "
-      >
+      <div className="relative -top-25 sm:top-12">
         <CounselingOnlineMeeting />
       </div>
       <div className="xl:mt-70">
